@@ -165,7 +165,7 @@ header.hero p {
 .venue-container {
   display: flex;
   gap: 30px;
-  max-width: 300px;  /* same as other sections */
+  max-width: 200px;  /* same as other sections */
   margin: auto;
   align-items: flex-start;
 }
@@ -173,7 +173,7 @@ header.hero p {
 /* Map same format as before */
 .venue-map {
   flex: 1;
-  min-height: 90px;
+  min-height: 150px;
 }
 
 .venue-map iframe {
@@ -231,6 +231,7 @@ footer {
     width: 80%;
   }
 }
+
 
 
 
