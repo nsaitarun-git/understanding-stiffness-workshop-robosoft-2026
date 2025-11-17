@@ -163,16 +163,10 @@ header.hero p {
 
 /* Section container */
 .venue-section {
-  background: #f3f4f6; /* very light gray, like your screenshot */
+  background: #f7f7f7; /* very light gray, like your screenshot */
   padding: 60px 20px;
-}
-
-/* Centered title */
-.venue-title {
-  text-align: center;
-  font-size: 2rem;
-  color: #003366; /* deep blue, similar to sample */
-  margin-bottom: 40px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 /* Two-column layout */
@@ -196,20 +190,6 @@ header.hero p {
   height: 100%;
   border: 0;
   border-radius: 6px;
-}
-
-/* Text side */
-.venue-text {
-  flex: 1;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #333;
-}
-
-/* Make links match conference style */
-.venue-text a {
-  color: #003366;
-  text-decoration: underline;
 }
 
 /* Mobile responsive */
@@ -241,6 +221,7 @@ footer {
     width: 80%;
   }
 }
+
 
 
 
