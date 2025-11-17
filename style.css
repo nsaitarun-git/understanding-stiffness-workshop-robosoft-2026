@@ -161,25 +161,16 @@ header.hero p {
   background: #005bb5;
 }
 
-/* Section container */
-.venue-section {
-  background: #f7f7f7; /* very light gray, like your screenshot */
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-/* Two-column layout */
-.venue-content {
+/* Match original template layout and spacing */
+.venue-container {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  max-width: 1200px;
+  gap: 30px;
+  max-width: 1000px;  /* same as other sections */
   margin: auto;
+  align-items: flex-start;
 }
 
-/* Map side */
+/* Map same format as before */
 .venue-map {
   flex: 1;
   min-height: 350px;
@@ -192,10 +183,29 @@ header.hero p {
   border-radius: 6px;
 }
 
-/* Mobile responsive */
-@media (max-width: 900px) {
-  .venue-content {
+/* Match original template font, size, color */
+.venue-text {
+  flex: 1;
+  font-size: 1.1rem;        /* same text size */
+  color: #222;              /* same text color */
+  line-height: 1.6;         /* same line height */
+}
+
+/* Match original link colors */
+.venue-text a {
+  color: #0073e6;
+  text-decoration: underline;
+}
+
+/* Make it mobile-friendly (same behavior as other sections) */
+@media (max-width: 768px) {
+  .venue-container {
     flex-direction: column;
+  }
+
+  .venue-map,
+  .venue-text {
+    width: 100%;
   }
 }
 
@@ -221,6 +231,7 @@ footer {
     width: 80%;
   }
 }
+
 
 
 
