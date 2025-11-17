@@ -59,6 +59,19 @@ header.hero p {
   background: #444;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 25px;
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
 .section {
   padding: 60px 20px;
   max-width: 1000px;
@@ -135,3 +148,4 @@ footer {
     width: 80%;
   }
 }
+
