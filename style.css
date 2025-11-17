@@ -173,7 +173,7 @@ header.hero p {
 /* Map same format as before */
 .venue-map {
   flex: 1;
-  min-height: 350px;
+  min-height: 300px;
 }
 
 .venue-map iframe {
@@ -231,6 +231,7 @@ footer {
     width: 80%;
   }
 }
+
 
 
 
