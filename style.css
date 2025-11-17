@@ -113,6 +113,41 @@ header.hero p {
   font-size: 1.1rem;
 }
 
+.schedule-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  font-size: 1rem;
+}
+
+.schedule-table thead {
+  background: #0073e6;
+  color: white;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 16px 20px;
+  text-align: left;
+}
+
+.schedule-table tbody tr {
+  border-bottom: 1px solid #ddd;   /* ← Line under each row */
+}
+
+.schedule-table tbody tr:nth-child(even) {
+  background: #f5f8fc;
+}
+
+.schedule-table tbody tr:hover {
+  background: #eaf3ff;
+  transition: 0.2s;
+}
+
 .btn {
   background: #0073e6;
   color: white;
@@ -148,4 +183,5 @@ footer {
     width: 80%;
   }
 }
+
 
