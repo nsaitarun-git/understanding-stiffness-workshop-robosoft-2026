@@ -165,7 +165,7 @@ header.hero p {
 .venue-container {
   display: flex;
   gap: 30px;
-  max-width: 1000px;  /* same as other sections */
+  max-width: 300px;  /* same as other sections */
   margin: auto;
   align-items: flex-start;
 }
@@ -231,6 +231,7 @@ footer {
     width: 80%;
   }
 }
+
 
 
 
