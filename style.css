@@ -161,39 +161,60 @@ header.hero p {
   background: #005bb5;
 }
 
-/* Layout container */
-.location-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 20px;
+/* Section container */
+.venue-section {
+  background: #f3f4f6; /* very light gray, like your screenshot */
   padding: 60px 20px;
-  max-width: 1100px;
+}
+
+/* Centered title */
+.venue-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #003366; /* deep blue, similar to sample */
+  margin-bottom: 40px;
+}
+
+/* Two-column layout */
+.venue-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
   margin: auto;
 }
 
-/* Text area */
-.location-text {
-  flex: 1;
-  font-size: 1.1rem;
-}
-
-/* Map area */
-.location-map {
+/* Map side */
+.venue-map {
   flex: 1;
   min-height: 350px;
 }
 
-.location-map iframe {
+.venue-map iframe {
   width: 100%;
   height: 100%;
   border: 0;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
-/* Mobile/Tablet fallback */
+/* Text side */
+.venue-text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Make links match conference style */
+.venue-text a {
+  color: #003366;
+  text-decoration: underline;
+}
+
+/* Mobile responsive */
 @media (max-width: 900px) {
-  .location-section {
+  .venue-content {
     flex-direction: column;
   }
 }
@@ -220,6 +241,7 @@ footer {
     width: 80%;
   }
 }
+
 
 
 
