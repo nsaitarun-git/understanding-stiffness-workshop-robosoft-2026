@@ -211,7 +211,7 @@ header.hero p {
 .sponsors img { 
   width: 130%; 
   height: 130px; 
-  object-fit: cover; 
+  object-fit: contain; 
   border-radius: 0; /* rectangle */ 
 }
 
@@ -249,6 +249,7 @@ footer {
     width: 80%;
   }
 }
+
 
 
 
