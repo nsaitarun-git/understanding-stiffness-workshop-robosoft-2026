@@ -198,12 +198,12 @@ header.hero p {
 }
 
 .sponsor {
-  width: 100px;
+  width: 120px; /* smaller than before */
 }
 
 .sponsor img {
-  width: 80%;
-  height: 100px;
+  width: 100%;
+  height: 100px; /* reduce height */
   object-fit: contain;
 }
 
@@ -241,6 +241,7 @@ footer {
     width: 80%;
   }
 }
+
 
 
 
