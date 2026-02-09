@@ -197,13 +197,22 @@ header.hero p {
   text-decoration: underline;
 }
 
-.sponsor {
-  width: 90px;
-}
+.sponsors { 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; gap: 30px; 
+} 
 
-.sponsor img {
-  width: 100%;
-  height: 80px;
+.sponsors { 
+  text-align: center; 
+  width: 100px; 
+} 
+
+.sponsors img { 
+  width: 150%; 
+  height: 150px; 
+  object-fit: cover; 
+  border-radius: 0; /* rectangle */ 
 }
 
 /* Make it mobile-friendly (same behavior as other sections) */
@@ -240,6 +249,7 @@ footer {
     width: 80%;
   }
 }
+
 
 
 
