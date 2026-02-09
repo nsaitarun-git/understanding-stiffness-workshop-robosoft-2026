@@ -197,6 +197,25 @@ header.hero p {
   text-decoration: underline;
 }
 
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sponsors {
+  text-align: center;
+  width: 200px;
+}
+
+.sponsors img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0; /* rectangle */
+}
+
 /* Make it mobile-friendly (same behavior as other sections) */
 @media (max-width: 768px) {
   .venue-container {
@@ -231,6 +250,7 @@ footer {
     width: 80%;
   }
 }
+
 
 
 
