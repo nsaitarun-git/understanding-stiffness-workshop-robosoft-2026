@@ -205,16 +205,18 @@ header.hero p {
 }
 
 .sponsor {
-  text-align: center;
-  width: 200px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff; /* optional */
 }
 
 .sponsor img {
-  width: 100%;
-  height: 200px;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
-  border-radius: 0;
-  display: block;
 }
 
 /* Make it mobile-friendly (same behavior as other sections) */
@@ -251,6 +253,7 @@ footer {
     width: 80%;
   }
 }
+
 
 
 
