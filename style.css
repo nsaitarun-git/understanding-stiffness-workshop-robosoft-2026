@@ -199,7 +199,7 @@ header.hero p {
 
 .sponsor {
     width: 100px;
-    height: auto;
+    height: 100px;
 }
 
 /* Make it mobile-friendly (same behavior as other sections) */
@@ -236,6 +236,7 @@ footer {
     width: 80%;
   }
 }
+
 
 
 
