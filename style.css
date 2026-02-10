@@ -197,7 +197,7 @@ header.hero p {
   text-decoration: underline;
 }
 
-.sponsor {
+.sponsors {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -250,6 +250,7 @@ footer {
     width: 80%;
   }
 }
+
 
 
 
