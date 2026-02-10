@@ -198,11 +198,11 @@ header.hero p {
 }
 
 .sponsor {
-  width: 110px;
+  width: 10px;
 }
 
 .sponsor img {
-  width: 80%;
+  width: 10%;
   height: auto;
 }
 
@@ -240,6 +240,7 @@ footer {
     width: 80%;
   }
 }
+
 
 
 
