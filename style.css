@@ -98,7 +98,7 @@ header.hero .overlay div {
 .navbar ul {
   display: flex;
   list-style: none;
-  gap: 15px;
+  gap: 20px;
 }
 
 .navbar a {
@@ -313,5 +313,6 @@ footer + footer {
     gap: 15px;
   }
 }
+
 
 
