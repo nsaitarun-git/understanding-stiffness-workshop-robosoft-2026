@@ -76,16 +76,17 @@ header.hero .overlay div {
 }
 
 /* =============================
-   Navbar (Normal Scroll)
+   Navbar (Reduced Gap)
 ============================= */
 
 .navbar {
   background: rgba(255,255,255,0.95);
   backdrop-filter: blur(10px);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;   /* reduced spacing */
   align-items: center;
-  padding: 12px 40px;
+  gap: 25px;                     /* controls logo-menu spacing */
+  padding: 12px 25px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
@@ -99,6 +100,7 @@ header.hero .overlay div {
   display: flex;
   list-style: none;
   gap: 20px;
+  margin-left: auto;   /* keeps menu aligned nicely */
 }
 
 .navbar a {
@@ -279,7 +281,7 @@ header.hero .overlay div {
 }
 
 /* =============================
-   Footer (No White Gap Between Two Footers)
+   Footer (No White Gap)
 ============================= */
 
 footer {
@@ -313,4 +315,3 @@ footer + footer {
     gap: 15px;
   }
 }
-
