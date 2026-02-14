@@ -27,7 +27,7 @@ h2 {
 }
 
 /* =============================
-   Hero Section (Wider)
+   Hero Section (Extended Width)
 ============================= */
 
 header.hero {
@@ -45,14 +45,14 @@ header.hero {
 header.hero .overlay {
   backdrop-filter: blur(10px);
   background: rgba(255,255,255,0.08);
-  padding: 60px 80px;
+  padding: 70px 100px;
   border-radius: 20px;
-  max-width: 1300px;   /* widened */
-  width: 95%;
+  max-width: 1600px;   /* extended title box */
+  width: 98%;
 }
 
 header.hero h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin-bottom: 20px;
 }
 
@@ -74,6 +74,12 @@ header.hero p {
   align-items: center;
   padding: 12px 40px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.logo img {
+  height: 35px;   /* smaller logo */
+  width: auto;
+  display: block;
 }
 
 .navbar ul {
