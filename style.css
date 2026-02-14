@@ -63,16 +63,16 @@ header.hero p {
 }
 
 /* =============================
-   Hero Buttons (Centered)
+   Hero Buttons (Centered via CSS only)
 ============================= */
 
-.hero-buttons {
-  display: flex;
-  justify-content: center;
+header.hero .overlay div {
+  display: flex !important;
+  justify-content: center !important;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 /* =============================
@@ -279,15 +279,20 @@ header.hero p {
 }
 
 /* =============================
-   Footer
+   Footer (No White Gap Between Two Footers)
 ============================= */
 
 footer {
   background: #111;
   color: white;
   text-align: center;
-  padding: 30px;
-  margin-top: 60px;
+  padding: 20px 20px 10px 20px;
+  margin: 0;
+}
+
+footer + footer {
+  padding-top: 0;
+  margin-top: -5px;
 }
 
 /* =============================
