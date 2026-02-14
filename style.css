@@ -91,7 +91,7 @@ header.hero .overlay div {
 
 .logo img {
   height: 35px;
-  width: auto;
+  width: 20px;
   display: block;
 }
 
@@ -313,3 +313,4 @@ footer + footer {
     gap: 15px;
   }
 }
+
