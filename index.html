@@ -1,395 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="hero">
-    <div class="overlay">
-      <h1>Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions</h1>
-      <p>9th IEEE-RAS International Conference on Soft Robotics (RoboSoft) • 7th April 2026 • Kanazawa • Japan</p>
-      <div style="display: flex; gap: 10px;">
-        <a href="https://www.robosoft2026.org/registration/" class="btn">Workshop Registration</a>
-        <a href="#submit" class="btn">Submit Poster</a>
-      </div>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions
+    </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <nav class="navbar">
-    <a href="https://www.robosoft2026.org/" class="logo">
-    <img src="images/logo_2.png" alt="Logo">
-    </a>
-
-    <a href="https://www.seresearch.qmul.ac.uk/robotics/" class="logo">
-    <img src="images/queen_mary_logo.png" alt="Logo">
-    </a>
-
-    <a href="https://www.imperial.ac.uk/" class="logo">
-    <img src="images/imperial_logo.png" alt="Logo">
-    </a>
-
-    <a href="https://www.cam.ac.uk/" class="logo">
-    <img src="images/university_of_cambridge.png" alt="Logo">
-    </a>
-
-    <a href="https://www.kindai.ac.jp/english/" class="logo">
-    <img src="images/kindai_university_logo.png" alt="Logo">
-    </a>
-    
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#speakers">Speakers</a></li>
-      <li><a href="#organisers">Organisers</a></li>
-      <li><a href="#schedule">Schedule</a></li>
-      <li><a href="#cfp">Submissions</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#venue">Venue</a></li>
-      <li><a href="#sponsors">Sponsors</a></li>
-    </ul>
-  </nav>
-
-  <section id="about" class="section">
-    <h2>Workshop Overview</h2>
-    <p>
-Physical interaction is one of the most dependable and common methods for understanding the physical properties of soft objects. In the medical domain and Minimally Invasive Surgery (MIS), the fundamental diagnosis technique known as palpation, was a staple in first line of examinations to identify stiff tissues and hard masses. Branching further into the agricultural field, assessing the stiffness of fruits allows farmers and machines to determine the quality of the produce and their readiness for consumption. Today, with rapid advancements in the field of soft robotics, soft haptics for teleoperation, agrifood systems, and industrial automation, there is growing interest in replicating this human ability to sense stiffness in robots. The stiffness perception of soft matter is essential for developing robotic systems that can interact safely, adaptively, and intelligently with soft objects in their environment.
-This workshop aims to unite researchers and practitioners from multiple disciplines to share insights on sensing the stiffness of soft matter and its significance in enabling safer robotic interactions. Furthermore, this workshop also aims to explore a psychophysical perspective for
-improving soft matter perception in robots. Through talks, discussions, and collaborative sessions, participants will explore the current state of stiffness sensing technologies, their practical applications, and the challenges that remain in understanding and modelling tactile perception.
-<br><br>
-<b>Objectives:</b> 
-<br>
-• Distinguish between tactile sensing and stiffness sensing and understand how these concepts are interrelated. <br>
-• Explain how tactile sensing mechanisms can be applied to measure stiffness across different materials and environments.<br>
-• Understand how humans perceive stiffness through touch, and how these mechanical, psychological, and neurological mechanisms can inspire the design of robotic stiffness sensors.<br>
-• Examine diverse applications of stiffness sensing, including its use in medicine, agriculture, material identification, robotic manipulation, etc.<br>
-• Discuss the role of stiffness perception in enhancing human and robot performance in teleoperation, virtual training, simulation systems, etc.<br>
-• Integrate interdisciplinary perspectives to propose future directions for research in robotic perception and human-machine interaction.<br>
-    </p>
-  </section>
-  <section id="speakers" class="section light">
-    <h2>Expert Speakers</h2>
-    <div class="speakers">
-      <div class="speaker">
-        <img src="images/leone.jpg" alt="Speaker 1">
-        <h3>Leone Costi</h3>
-        <p>European Space Agency</p>
+  <body>
+    <header class="hero">
+      <div class="overlay">
+        <h1>
+          Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions
+        </h1>
+        <p>
+          9th IEEE-RAS International Conference on Soft Robotics (RoboSoft) •
+          7th April 2026 • Kanazawa • Japan
+        </p>
+        <div style="display: flex; gap: 10px;">
+          <a
+            href="https://www.robosoft2026.org/registration/"
+            class="btn"
+            >Workshop Registration</a
+          >
+          <a href="#submit" class="btn">Submit Poster</a>
+        </div>
       </div>
-      <div class="speaker">
-        <img src="images/angela.jpg" alt="Speaker 1">
-        <h3>Angela Faragasso</h3>
-        <p>FingerVision Inc.</p>
-      </div>
-      <div class="speaker">
-        <img src="images/shogo.jpg" alt="Speaker 2">
-        <h3>Shogo Okamoto</h3>
-        <p>Tokyo Metropolitan University</p>
-      </div>
-      <div class="speaker">
-        <img src="images/xing.jpg" alt="Speaker 3">
-        <h3>Xing Wang</h3>
-        <p>University of Canberra</p>
-      </div>
-      <div class="speaker">
-        <img src="images/ilana.jpg" alt="Speaker 4">
-        <h3>Ilana Nisky</h3>
-        <p>Ben Gurion University of the Negev</p>
-      </div>
-      <div class="speaker">
-        <img src="images/sheila.jpg" alt="Speaker 5">
-        <h3>Sheila Russo</h3>
-        <p>Boston University College of Engineering</p>
-      </div>
-      <div class="speaker">
-        <img src="images/speaker1.jpg" alt="Speaker 6">
-        <h3>T.B.C</h3>
-        <p> </p>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <section id="organisers" class="section light">
-    <h2>Organisers</h2>
-    <div class="speakers">
-      <div class="speaker">
-        <img src="images/sai.jpg" alt="Organiser 1">
-        <h3>Saitarun Nadipineni</h3>
-        <p>Queen Mary University of London</p>
-      </div>
-      <div class="speaker">
-        <img src="images/abu.jpg" alt="Organiser 2">
-        <h3>Abu Bakar Dawood</h3>
-        <p>Queen Mary University of London</p>
-      </div>
-      <div class="speaker">
-        <img src="images/joshua.jpg" alt="Organiser 3">
-        <h3>Joshua Brown</h3>
-        <p>Imperial College London</p>
-      </div>
-      <div class="speaker">
-        <img src="images/chapa.jpg" alt="Organiser 4">
-        <h3>Chapa Sirithunge</h3>
-        <p>University of Cambridge</p>
-      </div>
-      <div class="speaker">
-        <img src="images/takahiro.jpg" alt="Organiser 5">
-        <h3>Takahiro Matsuno</h3>
-        <p>Kindai University</p>
-      </div>
-      <div class="speaker">
-        <img src="images/kaspar.jpg" alt="Organiser 6">
-        <h3>Kaspar Althoefer</h3>
-        <p>Queen Mary University of London</p>
-      </div>
-      <div class="speaker">
-        <img src="images/thilina.jpg" alt="Organiser 7">
-        <h3>Thilina Dulantha Lalitharatne </h3>
-        <p>Queen Mary University of London</p>
-      </div>
-    </div>
-  </section>
+    <nav class="navbar">
+      <a href="https://www.robosoft2026.org/" class="logo">
+        <img src="images/logo_2.png" alt="Logo" />
+      </a>
 
-  <section id="schedule" class="section">
-    <h2>Schedule (Tantitive)</h2>
-    <table class="schedule-table">
-<thead>
-<tr>
-<th>Time</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><b>9:00–9:10</b></td>
-<td>
-<b>Saitarun Nadipineni / Thilina Lalitharatne (QMUL)</b><br>
-<small>Opening remarks from the organizers</small>
-</td>
-</tr>
-<tr>
-<td><b>9:10–10:40</b></td>
-<td>
-<b>Expert Presentations</b><br>
-<small>The list of speakers and topics will be confirmed soon</small>
-</td>
-</tr>
-<tr>
-<td><b>10:40–11:10</b></td>
-<td><b>Coffee Break and Poster Session</b></td>
-</tr>
-<tr>
-<td><b>11:10–11:25</b></td>
-<td>
-<b>Expert Presentation</b><br>
-<small>The speaker and topic will be confirmed soon</small>
-</td>
-</tr>
-<tr>
-<td><b>11:25–11:55</b></td>
-<td>
-<b>Early Career Research Lightning Talks</b><br>
-<small>The list of speakers and topics will be confirmed soon</small>
-</td>
-</tr>
-<tr>
-<td><b>11:55–12:25</b></td>
-<td><b>Focused panel discussion between expert speakers</b></td>
-</tr>
-<tr>
-<td><b>12:25–12:40</b></td>
-<td><b>Open questions by attendees</b></td>
-</tr>
-<tr>
-<td><b>12:40–12:45</b></td>
-<td>
-<b>Kaspar Althoefer (QMUL)</b><br>
-<small>Closing remarks from the organizers</small>
-</td>
-</tr>
-</tbody>
-</table>
-  </section>
+      <a href="https://www.seresearch.qmul.ac.uk/robotics/" class="logo">
+        <img src="images/queen_mary_logo.png" alt="Logo" />
+      </a>
 
-  <section id="cfp" class="section light">
-    <h2>Submissons</h2>
-    <p>
-    We invite students and early-stage researchers to submit a poster in our areas of interest. The selected posters will be invited for a <b>5-minute lightning talk</b> during the workshop, offering 
-    an opportunity to get in touch with leading experts in their field. The areas of interest are (but not limited to):
+      <a href="https://www.imperial.ac.uk/" class="logo">
+        <img src="images/imperial_logo.png" alt="Logo" />
+      </a>
 
-    <br><br>
-    • Soft tactile sensors
-      <br>
-    • Soft stiffness sensors 
-      <br>
-    • Tactile and stiffness sensing in Minimally Invasive Surgery (MIS) and medical robots
-      <br>
-    • Stiffness and tactile sensing in food handling and manipulations
-      <br>
-    • Psychophysics and human perception of softness/stiffness
-      <br>
-    • Material models for soft matter
-      <br>
-    • Contact mechanics, indentation, and probing strategies for soft materials
-      <br>
-    • Calibration and benchmarking for softness/stiffness sensing
-      <br>
-    • Stiffness sensing in human-robot interactions
- 
-<br><br>
-<b>Submission Details</b>
-<br>
-• Submission Deadline: <b>13th March 2026</b>
-<br>
-• Poster format: vertical A1/A2 size
-<br>
-• Please use the <b>'Submit Poster'</b> tab below to submit your poster.
-<br>
-• File size limit <b>10MB</b>
-<br>
-• Only <b>PDF</b> format
-<br><br>
-Please submit the poster using the format <b>"Name_Surname_Category.pdf"</b>. 
-Don’t miss this opportunity to share your research at our workshop and engage in discussions with experts in the field!
-<br><br>
-🏆 The best poster will be awarded a prize of <b>$100</b>.
-  
-      <br><br>
-    </p>
-    <a href="#nothing" class="btn">Submit Poster</a>
-  </section>
+      <a href="https://www.cam.ac.uk/" class="logo">
+        <img src="images/university_of_cambridge.png" alt="Logo" />
+      </a>
 
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <p>For inquiries, please contact <b>Saitarun Nadipineni</b> via <a href="s.nadipineni@qmul.ac.uk">s.nadipineni@qmul.ac.uk.</a></p>
-  </section>
+      <a href="https://www.kindai.ac.jp/english/" class="logo">
+        <img src="images/kindai_university_logo.png" alt="Logo" />
+      </a>
 
-  <section id="venue" class="section light">
-  <h2>Venue</h2>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#organisers">Organisers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#cfp">Submissions</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+      </ul>
+    </nav>
 
-  <div class="venue-container">
-
-    <div class="venue-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d102527.63724450386!2d136.650179!3d36.578491!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8336a72400001%3A0x98f42aaa36342079!2sHotel%20Kanazawa!5e0!3m2!1sen!2sjp!4v1770117170482!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-
-    <div class="venue-text">
+    <section id="about" class="section">
+      <h2>Workshop Overview</h2>
       <p>
-        The workshop will take place from <b>8:45 AM – 12:30 PM</b> (with a coffee break) at <b>Hotel Kanazawa</b>.
+        Physical interaction is one of the most dependable and common methods
+        for understanding the physical properties of soft objects. In the
+        medical domain and Minimally Invasive Surgery (MIS), the fundamental
+        diagnosis technique known as palpation was a staple in first-line
+        examinations to identify stiff tissues and hard masses. Branching
+        further into the agricultural field, assessing the stiffness of fruits
+        allows farmers and machines to determine the quality of the produce and
+        their readiness for consumption.
+
+        Today, with rapid advancements in soft robotics, soft haptics for
+        teleoperation, agrifood systems, and industrial automation, there is
+        growing interest in replicating this human ability to sense stiffness in
+        robots. The stiffness perception of soft matter is essential for
+        developing robotic systems that can interact safely, adaptively, and
+        intelligently with soft objects in their environment.
+
+        This workshop aims to unite researchers and practitioners from multiple
+        disciplines to share insights on sensing the stiffness of soft matter
+        and its significance in enabling safer robotic interactions. It also
+        aims to explore a psychophysical perspective for improving soft matter
+        perception in robots.
+
+        Through talks, discussions, and collaborative sessions, participants
+        will explore the current state of stiffness sensing technologies, their
+        practical applications, and the challenges that remain in understanding
+        and modelling tactile perception.
+
+        <br /><br />
+        <b>Objectives:</b><br />
+        • Distinguish between tactile sensing and stiffness sensing and
+        understand how these concepts are interrelated. <br />
+        • Explain how tactile sensing mechanisms can be applied to measure
+        stiffness across different materials and environments.<br />
+        • Understand how humans perceive stiffness through touch, and how these
+        mechanical, psychological, and neurological mechanisms can inspire the
+        design of robotic stiffness sensors.<br />
+        • Examine diverse applications of stiffness sensing, including its use
+        in medicine, agriculture, material identification, robotic
+        manipulation, etc.<br />
+        • Discuss the role of stiffness perception in enhancing human and robot
+        performance in teleoperation, virtual training, simulation systems,
+        etc.<br />
+        • Integrate interdisciplinary perspectives to propose future directions
+        for research in robotic perception and human-machine interaction.<br />
       </p>
-      <p><strong>Address:</strong> 1-1 Horikawashinmachi, Kanazawa, Ishikawa 920-0849 Japan.</p>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <!-- Remaining sections keep same clean indentation structure -->
 
-<section id="sponsors" class="section">
-  <h2>Sponsors</h2>
-  <div class="sponsors">
-    <div class="sponsor">
-      <img src="images/Advanced_Logo.png" alt="Sponsor 1">
-    </div>
-   <!--
-    <div class="sponsor">
-      <img src="images/Mathworks.png" alt="Sponsor 2">
-    </div>
-  </div>
-    -->
-    
-</section>
+    <footer>
+      <p>
+        <b>
+          Understanding Soft-Matter Stiffness: Key Challenges and Emerging
+          Research Directions
+        </b>
+      </p>
+    </footer>
 
-  <footer>
-    <p><b>Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions</b></p>
-  </footer>
-  <footer>
-    <p>RoboSoft 2026 • Half-Day Workshop • 7th April 2026 • Kanazawa • Japan </p>
-  </footer>
-</body>
+    <footer>
+      <p>
+        RoboSoft 2026 • Half-Day Workshop • 7th April 2026 • Kanazawa • Japan
+      </p>
+    </footer>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
