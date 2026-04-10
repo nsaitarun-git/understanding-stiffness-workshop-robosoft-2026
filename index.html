@@ -47,12 +47,13 @@
       </ul>
     </nav>
 
-    <!-- Workshop Gallery - Full coverage with auto-optimized height -->
-    <section id="gallery" class="section light full-gallery">
+    <!-- Workshop Gallery - First section with full-width tiles + auto scroll -->
+    <section id="gallery" class="section light">
       <h2>Workshop Gallery</h2>
       <div class="carousel-container">
         <button class="carousel-arrow left" onclick="scrollCarousel(this, -1)">‹</button>
         <div class="carousel-scroll" id="gallery-scroll">
+          <!-- Replace with your actual images -->
           <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery1.jpg" alt="Gallery Image 1"></div>
           <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery2.jpg" alt="Gallery Image 2"></div>
           <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery3.jpg" alt="Gallery Image 3"></div>
@@ -67,49 +68,49 @@
       <h2>Workshop Overview</h2>
       <p>
         Physical interaction is one of the most dependable and common methods
-        for understanding the physical properties of soft objects. In the
-        medical domain and Minimally Invasive Surgery (MIS), the fundamental
-        diagnosis technique known as palpation, was a staple in first line of
-        examinations to identify stiff tissues and hard masses. Branching
-        further into the agricultural field, assessing the stiffness of fruits
-        allows farmers and machines to determine the quality of the produce and
-        their readiness for consumption. Today, with rapid advancements in the
-        field of soft robotics, soft haptics for teleoperation, agrifood systems,
-        and industrial automation, there is growing interest in replicating this
-        human ability to sense stiffness in robots. The stiffness perception of
-        soft matter is essential for developing robotic systems that can
-        interact safely, adaptively, and intelligently with soft objects in
-        their environment. This workshop aims to unite researchers and
-        practitioners from multiple disciplines to share insights on sensing the
-        stiffness of soft matter and its significance in enabling safer robotic
-        interactions. Furthermore, this workshop also aims to explore a
-        psychophysical perspective for improving soft matter perception in
-        robots. Through talks, discussions, and collaborative sessions,
-        participants will explore the current state of stiffness sensing
-        technologies, their practical applications, and the challenges that
-        remain in understanding and modelling tactile perception.
-        <br /><br />
-        <b>Objectives:</b>
-        <br />
-        • Distinguish between tactile sensing and stiffness sensing and
-        understand how these concepts are interrelated.<br />
-        • Explain how tactile sensing mechanisms can be applied to measure
-        stiffness across different materials and environments.<br />
-        • Understand how humans perceive stiffness through touch, and how these
-        mechanical, psychological, and neurological mechanisms can inspire the
-        design of robotic stiffness sensors.<br />
-        • Examine diverse applications of stiffness sensing, including its use
-        in medicine, agriculture, material identification, robotic manipulation,
-        etc.<br />
-        • Discuss the role of stiffness perception in enhancing human and robot
-        performance in teleoperation, virtual training, simulation systems, etc.<br />
-        • Integrate interdisciplinary perspectives to propose future directions
-        for research in robotic perception and human-machine interaction.
+        for understanding the physical properties of soft objects. ... (your full original text here)
       </p>
     </section>
 
-    <!-- Speakers, Organisers, Lightning Posters, Schedule, CFP, Venue, Sponsors, Contact sections remain unchanged from previous version -->
-    <!-- Paste your previous sections here (speakers, organisers, posters, schedule, cfp, venue, sponsors, contact, footers) -->
+    <!-- Speakers, Organisers, Lightning Posters, Schedule, etc. remain the same as before -->
+    <!-- (For brevity, I'm showing only the changed parts. Keep all other sections exactly as in the previous version) -->
+
+    <section id="speakers" class="section light">
+      <h2>Expert Speakers</h2>
+      <div class="speakers">
+        <!-- Your speakers cards here (unchanged) -->
+      </div>
+    </section>
+
+    <section id="organisers" class="section light">
+      <h2>Organisers</h2>
+      <div class="speakers">
+        <!-- Your organisers cards here (unchanged) -->
+      </div>
+    </section>
+
+    <section id="posters" class="section light">
+      <h2>Lightning Talk Posters</h2>
+      <div class="winners-box">
+        <h3>🏆 Best Poster Award Winners</h3>
+        <p>Congratulations to the two outstanding posters!<br>Each winner receives a prize of <strong>$100</strong>.</p>
+      </div>
+
+      <div class="carousel-container">
+        <button class="carousel-arrow left" onclick="scrollCarousel(this, -1)">‹</button>
+        <div class="carousel-scroll" id="posters-scroll">
+          <!-- Replace with your actual poster images -->
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/poster1.jpg" alt="Lightning Poster 1"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/poster2.jpg" alt="Lightning Poster 2"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/poster3.jpg" alt="Lightning Poster 3"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/poster4.jpg" alt="Lightning Poster 4"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/poster5.jpg" alt="Lightning Poster 5"></div>
+        </div>
+        <button class="carousel-arrow right" onclick="scrollCarousel(this, 1)">›</button>
+      </div>
+    </section>
+
+    <!-- Rest of sections: schedule, cfp, venue, sponsors, contact, footers (copy from previous response) -->
 
     <!-- Lightbox Modal -->
     <div id="imageModal" class="modal">
@@ -124,12 +125,15 @@
       function startAutoScroll(containerId) {
         const container = document.getElementById(containerId);
         if (!container) return;
+
         clearInterval(autoScrollInterval);
 
         autoScrollInterval = setInterval(() => {
           const maxScroll = container.scrollWidth - container.clientWidth;
-          if (container.scrollLeft + container.clientWidth >= maxScroll - 10) {
-            container.scrollTo({ left: 0, behavior: 'smooth' });
+          const nextScroll = container.scrollLeft + container.clientWidth;
+
+          if (nextScroll >= maxScroll - 10) {
+            container.scrollTo({ left: 0, behavior: 'smooth' }); // loop back to start
           } else {
             container.scrollBy({ left: container.clientWidth, behavior: 'smooth' });
           }
@@ -138,9 +142,9 @@
 
       function scrollCarousel(btn, direction) {
         const container = btn.parentElement.querySelector('.carousel-scroll');
-        clearInterval(autoScrollInterval);
+        clearInterval(autoScrollInterval); // pause auto when manual scroll
         container.scrollBy({ left: direction * container.clientWidth, behavior: 'smooth' });
-        setTimeout(() => startAutoScroll(container.id), 6000);
+        setTimeout(() => startAutoScroll(container.id), 6000); // resume after 6s
       }
 
       function updateArrowStates(container) {
@@ -156,34 +160,40 @@
         rightBtn.disabled = isAtEnd;
       }
 
+      // Open image in modal
       function openImage(element) {
         const imgSrc = element.querySelector('img').src;
         document.getElementById('modalImage').src = imgSrc;
         document.getElementById('imageModal').style.display = 'flex';
         document.body.style.overflow = 'hidden';
-        clearInterval(autoScrollInterval);
+        clearInterval(autoScrollInterval); // pause auto-scroll when modal is open
       }
 
       function closeModal() {
         document.getElementById('imageModal').style.display = 'none';
         document.body.style.overflow = 'visible';
+        // Resume auto-scroll after closing modal
         setTimeout(() => {
           startAutoScroll('gallery-scroll');
           startAutoScroll('posters-scroll');
         }, 500);
       }
 
+      // Keyboard support
       document.addEventListener('keydown', (e) => {
         if (e.key === "Escape") closeModal();
       });
 
+      // Initialize everything
       window.addEventListener('load', () => {
         const galleryContainer = document.getElementById('gallery-scroll');
         const postersContainer = document.getElementById('posters-scroll');
 
+        // Start auto-scroll for both carousels
         startAutoScroll('gallery-scroll');
         startAutoScroll('posters-scroll');
 
+        // Update arrows on scroll
         [galleryContainer, postersContainer].forEach(container => {
           if (container) {
             updateArrowStates(container);
@@ -191,6 +201,7 @@
           }
         });
 
+        // Pause auto-scroll on hover
         document.querySelectorAll('.carousel-container').forEach(cont => {
           cont.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
           cont.addEventListener('mouseleave', () => {
