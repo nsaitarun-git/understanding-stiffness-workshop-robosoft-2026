@@ -1,97 +1,74 @@
+/* KEEP ALL YOUR ORIGINAL CSS ABOVE */
+
 /* =============================
-   NEW: Image Carousel Styles
+   NEW: CAROUSEL
 ============================= */
 
 .carousel-container {
   position: relative;
-  max-width: 100%;
-  margin: 40px auto;
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
 }
 
-.carousel-scroll {
+.carousel {
   display: flex;
   gap: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  padding: 20px 10px;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
+  padding: 10px 0;
 }
 
-.carousel-scroll::-webkit-scrollbar {
+.carousel img {
+  height: 220px;
+  border-radius: 15px;
+  flex-shrink: 0;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+}
+
+.carousel::-webkit-scrollbar {
   display: none;
 }
 
-.carousel-item {
-  flex: 0 0 auto;
-  scroll-snap-align: center;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
-}
+/* =============================
+   ARROWS
+============================= */
 
-.carousel-item:hover {
-  transform: scale(1.03);
-}
-
-.carousel-item img {
-  width: 320px;
-  height: 240px;
-  object-fit: cover;
-  display: block;
-}
-
-.carousel-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255,255,255,0.9);
-  color: #0073e6;
+.carousel-btn {
+  background: #ddd;
   border: none;
-  width: 50px;
-  height: 50px;
+  color: #666;
+  font-size: 28px;
+  padding: 10px 15px;
   border-radius: 50%;
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-  z-index: 10;
+  opacity: 0.7;
+  transition: 0.3s;
 }
 
-.carousel-arrow:hover:not(:disabled) {
-  background: white;
-  transform: translateY(-50%) scale(1.1);
+.carousel-btn:hover {
+  background: #bbb;
+  opacity: 1;
 }
 
-.carousel-arrow:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
+/* =============================
+   WINNERS BOX
+============================= */
 
-.carousel-arrow.left { left: 15px; }
-.carousel-arrow.right { right: 15px; }
-
-/* Winners Highlight Box */
 .winners-box {
-  background: linear-gradient(135deg, #ffd700, #ffed4e);
-  color: #1a1a1a;
-  padding: 30px;
+  background: linear-gradient(135deg, #fff8e6, #fff);
+  border: 2px solid #ffd700;
+  padding: 25px;
   border-radius: 20px;
   text-align: center;
-  margin-bottom: 50px;
-  box-shadow: 0 12px 35px rgba(255, 215, 0, 0.25);
-  border: 3px solid #e6b800;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .winners-box h3 {
-  font-size: 1.6rem;
-  margin-bottom: 12px;
+  color: #b8860b;
 }
