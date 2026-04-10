@@ -26,7 +26,10 @@ h2 {
   text-align: center;
 }
 
-/* Hero, Navbar, Sections, Speakers, Schedule, Buttons, Venue, Sponsors, Footer */
+/* =============================
+   Hero Section
+============================= */
+
 header.hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
               url('images/banner.jpg') center/cover no-repeat;
@@ -68,6 +71,10 @@ header.hero .overlay div {
   margin-top: 25px;
 }
 
+/* =============================
+   Navbar
+============================= */
+
 .navbar {
   background: rgba(255,255,255,0.95);
   backdrop-filter: blur(10px);
@@ -102,6 +109,10 @@ header.hero .overlay div {
 .navbar a:hover {
   color: #0073e6;
 }
+
+/* =============================
+   Sections & Common Styles
+============================= */
 
 .section {
   padding: 90px 20px;
@@ -339,6 +350,7 @@ footer + footer {
 .carousel-arrow.left { left: 15px; }
 .carousel-arrow.right { right: 15px; }
 
+/* Winners Highlight Box */
 .winners-box {
   background: linear-gradient(135deg, #ffd700, #ffed4e);
   color: #1a1a1a;
@@ -355,7 +367,10 @@ footer + footer {
   margin-bottom: 12px;
 }
 
-/* Responsive */
+/* =============================
+   Responsive
+============================= */
+
 @media (max-width: 768px) {
   header.hero h1 {
     font-size: 2rem;
