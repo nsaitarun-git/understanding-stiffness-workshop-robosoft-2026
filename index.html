@@ -56,9 +56,9 @@
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#speakers">Speakers</a></li>
         <li><a href="#organisers">Organisers</a></li>
+        <li><a href="#posters">Lightning Posters</a></li>
         <li><a href="#schedule">Schedule</a></li>
         <li><a href="#cfp">Submissions</a></li>
-        <li><a href="#posters">Lightning Posters</a></li>
         <li><a href="#venue">Venue</a></li>
         <li><a href="#sponsors">Sponsors</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -110,7 +110,7 @@
       </p>
     </section>
 
-    <!-- New: Gallery Section with scrolling images -->
+    <!-- Workshop Gallery - Now the first major visual section after About -->
     <section id="gallery" class="section light">
       <h2>Workshop Gallery</h2>
       <div class="carousel-container">
@@ -221,6 +221,30 @@
           <h3>Thilina Dulantha Lalitharatne</h3>
           <p>Queen Mary University of London</p>
         </div>
+      </div>
+    </section>
+
+    <!-- Lightning Talk Posters - Moved right after Organisers -->
+    <section id="posters" class="section light">
+      <h2>Lightning Talk Posters</h2>
+      
+      <div class="winners-box">
+        <h3>🏆 Best Poster Award Winners</h3>
+        <p>Congratulations to the two outstanding posters!<br>
+        Each winner receives a prize of <strong>$100</strong>.</p>
+      </div>
+
+      <div class="carousel-container">
+        <button class="carousel-arrow left" onclick="scrollCarousel(this, -1)" aria-label="Previous poster">‹</button>
+        <div class="carousel-scroll" id="posters-scroll">
+          <!-- Replace with your actual poster images (thumbnails/screenshots) -->
+          <div class="carousel-item"><img src="images/poster1.jpg" alt="Lightning Poster 1"></div>
+          <div class="carousel-item"><img src="images/poster2.jpg" alt="Lightning Poster 2"></div>
+          <div class="carousel-item"><img src="images/poster3.jpg" alt="Lightning Poster 3"></div>
+          <div class="carousel-item"><img src="images/poster4.jpg" alt="Lightning Poster 4"></div>
+          <div class="carousel-item"><img src="images/poster5.jpg" alt="Lightning Poster 5"></div>
+        </div>
+        <button class="carousel-arrow right" onclick="scrollCarousel(this, 1)" aria-label="Next poster">›</button>
       </div>
     </section>
 
@@ -369,30 +393,6 @@
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJPiRB89ZIpEpFhzFODJp0ifiEZEbt2T6y5ku91BlzyIN0Vg/viewform?usp=publish-editor" class="btn">Submit Poster</a>
     </section>
 
-    <!-- New: Lightning Talk Posters Section with scrolling images -->
-    <section id="posters" class="section light">
-      <h2>Lightning Talk Posters</h2>
-      
-      <div class="winners-box">
-        <h3>🏆 Best Poster Award Winners</h3>
-        <p>Congratulations to the two outstanding posters!<br>
-        Each winner receives a prize of <strong>$100</strong>.</p>
-      </div>
-
-      <div class="carousel-container">
-        <button class="carousel-arrow left" onclick="scrollCarousel(this, -1)" aria-label="Previous poster">‹</button>
-        <div class="carousel-scroll" id="posters-scroll">
-          <!-- Replace with your actual poster images (thumbnails/screenshots) -->
-          <div class="carousel-item"><img src="images/poster1.jpg" alt="Lightning Poster 1"></div>
-          <div class="carousel-item"><img src="images/poster2.jpg" alt="Lightning Poster 2"></div>
-          <div class="carousel-item"><img src="images/poster3.jpg" alt="Lightning Poster 3"></div>
-          <div class="carousel-item"><img src="images/poster4.jpg" alt="Lightning Poster 4"></div>
-          <div class="carousel-item"><img src="images/poster5.jpg" alt="Lightning Poster 5"></div>
-        </div>
-        <button class="carousel-arrow right" onclick="scrollCarousel(this, 1)" aria-label="Next poster">›</button>
-      </div>
-    </section>
-
     <section id="venue" class="section light">
       <h2>Venue</h2>
       <div class="venue-container">
@@ -454,7 +454,7 @@
       </p>
     </footer>
 
-    <!-- JavaScript for scrolling carousels with greyed-out arrows -->
+    <!-- JavaScript for carousels with greyed-out arrows -->
     <script>
       function scrollCarousel(btn, direction) {
         const container = btn.parentElement.querySelector('.carousel-scroll');
