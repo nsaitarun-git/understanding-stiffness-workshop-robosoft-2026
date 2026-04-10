@@ -1,11 +1,11 @@
 /* =============================
-   Image Carousel (Reusable)
+   NEW: Image Carousel Styles
 ============================= */
 
 .carousel-container {
   position: relative;
   max-width: 100%;
-  margin: 0 auto 40px;
+  margin: 40px auto;
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
@@ -17,13 +17,13 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  padding: 20px;
+  padding: 20px 10px;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
 }
 
 .carousel-scroll::-webkit-scrollbar {
-  display: none; /* Chrome/Safari/Edge */
+  display: none;
 }
 
 .carousel-item {
@@ -69,13 +69,11 @@
 .carousel-arrow:hover:not(:disabled) {
   background: white;
   transform: translateY(-50%) scale(1.1);
-  box-shadow: 0 6px 20px rgba(0,115,230,0.3);
 }
 
 .carousel-arrow:disabled {
   opacity: 0.4;
   cursor: not-allowed;
-  background: rgba(255,255,255,0.7);
 }
 
 .carousel-arrow.left { left: 15px; }
@@ -95,10 +93,5 @@
 
 .winners-box h3 {
   font-size: 1.6rem;
-  margin-bottom: 10px;
-}
-
-.winners-box p {
-  font-size: 1.1rem;
-  margin: 0;
+  margin-bottom: 12px;
 }
