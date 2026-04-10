@@ -1,495 +1,317 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions
-    </title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+/* =============================
+   Global Styles
+============================= */
 
-  <body>
-    <header class="hero">
-      <div class="overlay">
-        <h1>
-          Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions
-        </h1>
-        <p>
-          9th IEEE-RAS International Conference on Soft Robotics (RoboSoft) •
-          7th April 2026 • Kanazawa • Japan
-        </p>
-        <div style="display: flex; gap: 10px;">
-          <a
-            href="https://www.robosoft2026.org/registration/"
-            class="btn"
-            >Workshop Registration</a
-          >
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJPiRB89ZIpEpFhzFODJp0ifiEZEbt2T6y5ku91BlzyIN0Vg/viewform?usp=publish-editor" class="btn">Submit Poster</a>
-        </div>
-      </div>
-    </header>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <nav class="navbar">
-      <a href="https://www.robosoft2026.org/" class="logo">
-        <img src="images/logo_2.png" alt="Logo" />
-      </a>
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f4f6f9;
+  color: #1a1a1a;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
 
-      <a href="https://www.seresearch.qmul.ac.uk/robotics/" class="logo">
-        <img src="images/queen_mary_logo.png" alt="Logo" />
-      </a>
+h1, h2, h3 {
+  font-weight: 700;
+}
 
-      <a href="https://www.imperial.ac.uk/" class="logo">
-        <img src="images/imperial_logo.png" alt="Logo" />
-      </a>
+h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
 
-      <a href="https://www.cam.ac.uk/" class="logo">
-        <img src="images/university_of_cambridge.png" alt="Logo" />
-      </a>
+/* =============================
+   Hero Section (Extended Width)
+============================= */
 
-      <a href="https://www.kindai.ac.jp/english/" class="logo">
-        <img src="images/kindai_university_logo.png" alt="Logo" />
-      </a>
-<!--
-      <a href="https://palpable-project.eu/" class="logo">
-        <img src="images/PALPABLE.png" alt="Logo" />
-      </a>
-      -->
+header.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('images/banner.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
 
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#speakers">Speakers</a></li>
-        <li><a href="#organisers">Organisers</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#cfp">Submissions</a></li>
-        <li><a href="#venue">Venue</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+header.hero .overlay {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.08);
+  padding: 70px 100px;
+  border-radius: 20px;
+  max-width: 1600px;
+  width: 98%;
+}
 
-    <section id="about" class="section">
-      <h2>Workshop Overview</h2>
-      <p>
-        Physical interaction is one of the most dependable and common methods
-        for understanding the physical properties of soft objects. In the
-        medical domain and Minimally Invasive Surgery (MIS), the fundamental
-        diagnosis technique known as palpation, was a staple in first line of
-        examinations to identify stiff tissues and hard masses. Branching
-        further into the agricultural field, assessing the stiffness of fruits
-        allows farmers and machines to determine the quality of the produce and
-        their readiness for consumption. Today, with rapid advancements in the
-        field of soft robotics, soft haptics for teleoperation, agrifood systems,
-        and industrial automation, there is growing interest in replicating this
-        human ability to sense stiffness in robots. The stiffness perception of
-        soft matter is essential for developing robotic systems that can
-        interact safely, adaptively, and intelligently with soft objects in
-        their environment. This workshop aims to unite researchers and
-        practitioners from multiple disciplines to share insights on sensing the
-        stiffness of soft matter and its significance in enabling safer robotic
-        interactions. Furthermore, this workshop also aims to explore a
-        psychophysical perspective for improving soft matter perception in
-        robots. Through talks, discussions, and collaborative sessions,
-        participants will explore the current state of stiffness sensing
-        technologies, their practical applications, and the challenges that
-        remain in understanding and modelling tactile perception.
-        <br /><br />
-        <b>Objectives:</b>
-        <br />
-        • Distinguish between tactile sensing and stiffness sensing and
-        understand how these concepts are interrelated.
-        <br />
-        • Explain how tactile sensing mechanisms can be applied to measure
-        stiffness across different materials and environments.
-        <br />
-        • Understand how humans perceive stiffness through touch, and how these
-        mechanical, psychological, and neurological mechanisms can inspire the
-        design of robotic stiffness sensors.
-        <br />
-        • Examine diverse applications of stiffness sensing, including its use
-        in medicine, agriculture, material identification, robotic manipulation,
-        etc.
-        <br />
-        • Discuss the role of stiffness perception in enhancing human and robot
-        performance in teleoperation, virtual training, simulation systems, etc.
-        <br />
-        • Integrate interdisciplinary perspectives to propose future directions
-        for research in robotic perception and human-machine interaction.
-        <br />
-      </p>
-    </section>
+header.hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+}
 
-    <section id="speakers" class="section light">
-      <h2>Expert Speakers</h2>
-      <div class="speakers">
+header.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
 
-        <div class="speaker">
-          <img src="images/shogo.jpg" alt="Speaker 1" />
-          <h3>Shogo Okamoto</h3>
-          <p>Tokyo Metropolitan University</p>
-        </div>
+/* =============================
+   Hero Buttons (Centered via CSS only)
+============================= */
 
-        <div class="speaker">
-          <img src="images/ilana.jpg" alt="Speaker 2" />
-          <h3>Ilana Nisky</h3>
-          <p>Ben Gurion University of the Negev</p>
-        </div>
+header.hero .overlay div {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
 
-         <div class="speaker">
-          <img src="images/leone.jpg" alt="Speaker 3" />
-          <h3>Leone Costi</h3>
-          <p>European Space Agency</p>
-        </div>
+/* =============================
+   Navbar (Reduced Gap)
+============================= */
 
-        <div class="speaker">
-          <img src="images/sheila.jpg" alt="Speaker 4" />
-          <h3>Sheila Russo</h3>
-          <p>Boston University College of Engineering</p>
-        </div>
+.navbar {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: flex-start;   /* reduced spacing */
+  align-items: center;
+  gap: 25px;                     /* controls logo-menu spacing */
+  padding: 12px 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
 
-        <div class="speaker">
-          <img src="images/sanjaya.jpg" alt="Speaker 9" />
-          <h3>Sanjaya Bandara</h3>
-          <p>Kyushu University</p>
-        </div>
-        
-        <div class="speaker">
-          <img src="images/angela.jpg" alt="Speaker 6" />
-          <h3>Angela Faragasso</h3>
-          <p>FingerVision Inc.</p>
-        </div>
+.logo img {
+  height: 35px;
+  width: auto;
+  display: block;
+}
 
-        <div class="speaker">
-          <img src="images/masashi.jpg" alt="Speaker 7" />
-          <h3>Masashi Konyo</h3>
-          <p>Tohoku University</p>
-        </div>
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin-left: auto;   /* keeps menu aligned nicely */
+}
 
-        <div class="speaker">
-          <img src="images/chapa.jpg" alt="Speaker 10" />
-          <h3>Chapa Sirithunge</h3>
-          <p>University of Cambridge</p>
-        </div>
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
 
-        <div class="speaker">
-          <img src="images/arsen.jpg" alt="Speaker 8" />
-          <h3>Arsen Abdulali</h3>
-          <p>Queen Mary University of London</p>
-        </div>
+.navbar a:hover {
+  color: #0073e6;
+}
 
-        <div class="speaker">
-          <img src="images/xing.jpg" alt="Speaker 5" />
-          <h3>Xing Wang</h3>
-          <p>University of Canberra</p>
-        </div>
-      </div>
-    </section>
+/* =============================
+   Sections
+============================= */
 
-    <section id="organisers" class="section light">
-      <h2>Organisers</h2>
-      <div class="speakers">
-        <div class="speaker">
-          <img src="images/sai.jpg" alt="Organiser 1" />
-          <h3>Saitarun Nadipineni</h3>
-          <p>Queen Mary University of London</p>
-        </div>
+.section {
+  padding: 90px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
 
-        <div class="speaker">
-          <img src="images/abu.jpg" alt="Organiser 2" />
-          <h3>Abu Bakar Dawood</h3>
-          <p>Queen Mary University of London</p>
-        </div>
+.section.light {
+  background: white;
+  border-radius: 20px;
+  margin-top: 60px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
 
-        <div class="speaker">
-          <img src="images/joshua.jpg" alt="Organiser 3" />
-          <h3>Joshua Brown</h3>
-          <p>Imperial College London</p>
-        </div>
+/* =============================
+   Speaker Cards
+============================= */
 
-        <div class="speaker">
-          <img src="images/chapa.jpg" alt="Organiser 4" />
-          <h3>Chapa Sirithunge</h3>
-          <p>University of Cambridge</p>
-        </div>
+.speakers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
 
-        <div class="speaker">
-          <img src="images/takahiro.jpg" alt="Organiser 5" />
-          <h3>Takahiro Matsuno</h3>
-          <p>Kindai University</p>
-        </div>
+.speaker {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+  text-align: center;
+}
 
-        <div class="speaker">
-          <img src="images/kaspar.jpg" alt="Organiser 6" />
-          <h3>Kaspar Althoefer</h3>
-          <p>Queen Mary University of London</p>
-        </div>
+.speaker:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
 
-        <div class="speaker">
-          <img src="images/thilina.jpg" alt="Organiser 7" />
-          <h3>Thilina Dulantha Lalitharatne</h3>
-          <p>Queen Mary University of London</p>
-        </div>
-      </div>
-    </section>
+.speaker img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
 
-    <section id="schedule" class="section">
-      <h2>Schedule</h2>
-      <table class="schedule-table">
-  <thead>
-    <tr>
-      <th>Time</th>
-      <th>Details</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>09:00–09:10</b></td>
-      <td>
-        <b>Opening Remarks</b><br />
-        <small>Thilina Lalitharatne</small>
-      </td>
-    </tr>
-    <tr>
-      <td><b>09:10–10:10</b></td>
-      <td>
-        <b>Session 1: Expert Presentations</b><br />
-        <small>(10 min + 2 min Q&amp;A each)</small>
-      </td>
-    </tr>
-    <tr>
-      <td><b>09:10–09:22</b></td>
-      <td>Shogo Okamoto - "How Humans Perceive Softness Through Touch, Differently from the Mechanical Definition of Stiffness"
-</td>
-    </tr>
-    <tr>
-      <td><b>09:22–09:34</b></td>
-      <td>Arsen Abdulali - "Overcoming Tradeoffs in Modeling Soft Objects"</td>
-    </tr>
-    <tr>
-      <td><b>09:34–09:46</b></td>
-      <td>Sanjaya Bandara - "Optical Assessment of Tissue Properties: From Muscle Measurement to Mechanical Characterization"</td>
-    </tr>
-    <tr>
-      <td><b>09:46–09:58</b></td>
-      <td>Angela Faragasso - “Seeing Touch: Perceiving Material Properties Through Vision-Based Tactile Sensing”</td>
-    </tr>
-    <tr>
-      <td><b>09:58–10:10</b></td>
-      <td>Leone Costi - “Soft Physical Twins for Remote Palpation”</td>
-    </tr>
-    <tr>
-      <td><b>10:10–10:25</b></td>
-      <td>
-        <b>Lightning Talks</b><br />
-        <small>(5 speakers, 2 min each)</small>
-      </td>
-    </tr>
-    <tr>
-    <td><b>10:10–10:12</b></td>
-      <td>Juliette Hars - "HOOKED - Soft, Conformable, Crocheted Sensing Garment: Programmable Capacitive Arrays for Force Estimation"
-    </td>
-      </tr>
-    <tr>
-    <td><b>10:12–10:14</b></td>
-      <td>Benhui Dai - "Bio-inspired Soft Robotics & Electronics for Real-world Unstructured Scenarios"
-    </td>
-      </tr>
-    <tr>
-    <td><b>10:14–10:16</b></td>
-      <td>Christos Vasileios Lousis - "Bioinspired Passive Stiffening for Soft Actuator in MIS"
-    </td>
-      </tr>
-    <tr>
-    <td><b>10:16–10:18</b></td>
-      <td>Yongzhang Zhu - "Hybrid Positive-Negative Pressure Tunable Soft Tactile Sensor"
-    </td>
-      </tr>
-    <tr>
-    <td><b>10:18–10:20</b></td>
-      <td>Hashir Hamid - "Development of a Soft Stiffness-Controllable Vision-Based Force Sensing Probe"
-    </td>
-      </tr>
-    <tr>
-      <td><b>10:25–10:55</b></td>
-      <td>
-        <b>Coffee Break, Poster Presentations, and Voting</b>
-      </td>
-    </tr>
-    <tr>
-      <td><b>10:55–11:55</b></td>
-      <td>
-        <b>Session 2: Expert Presentations</b><br />
-        <small>(10 min + 2 min Q&amp;A each)</small>
-      </td>
-    </tr>
-    <tr>
-      <td><b>10:55–11:07</b></td>
-      <td>Masashi Konyo - "Rendering Softness via Contact Surface Stimulation by Linking Physical Simulation and a Tactile Display"</td>
-    </tr>
-    <tr>
-      <td><b>11:07–11:19</b></td>
-      <td>Xing Wang - "Automated grasping pipeline with grasping pose estimation and soft robotics in a harsh agricultural environment"</td>
-    </tr>
-    <tr>
-      <td><b>11:19–11:31</b></td>
-      <td>Chapa Sirithunge - "The Politics of softness: Who controls touch, force and perception?"</td>
-    </tr>
-    <tr>
-      <td><b>11:31–11:43</b></td>
-      <td>Ilana Nisky - "The Dynamics of Soft Touch: Perception and Action with Compliant Virtual Objects"</td>
-    </tr>
-    <tr>
-      <td><b>11:43–11:55</b></td>
-      <td>Sheila Russo - “Feeling Without Touch: Soft Optical Sensors for Perception in Compliant Environments”</td>
-    </tr>
-    <tr>
-      <td><b>11:55–12:20</b></td>
-      <td>
-        <b>Panel Discussion and Q&amp;A</b><br />
-        <small>(All Speakers)</small>
-      </td>
-    </tr>
-    <tr>
-      <td><b>12:20–12:30</b></td>
-      <td>
-        <b>Award Ceremony and Closing Remarks</b>
-      </td>
-    </tr>
-  </tbody>
-</table>
-    </section>
+.speaker h3 {
+  margin-bottom: 5px;
+}
 
-    <section id="cfp" class="section light">
-      <h2>Submissons</h2>
-      <p>
-        We invite students and early-stage researchers to submit a poster in
-        our areas of interest. The selected posters will be invited for a
-        <b>5-minute lightning talk</b> during the workshop, offering an
-        opportunity to get in touch with leading experts in their field. The
-        areas of interest are (but not limited to):
+.speaker p {
+  color: #666;
+  font-size: 0.95rem;
+}
 
-        <br /><br />
-        • Soft tactile sensors <br />
-        • Soft stiffness sensors <br />
-        • Tactile and stiffness sensing in Minimally Invasive Surgery (MIS) and
-        medical robots <br />
-        • Stiffness and tactile sensing in food handling and manipulations
-        <br />
-        • Psychophysics and human perception of softness/stiffness <br />
-        • Material models for soft matter <br />
-        • Contact mechanics, indentation, and probing strategies for soft
-        materials <br />
-        • Calibration and benchmarking for softness/stiffness sensing <br />
-        • Stiffness sensing in human-robot interactions
+/* =============================
+   Schedule Table
+============================= */
 
-        <br /><br />
-        <b>Submission Details</b>
-        <br />
-        • Submission Deadline: <b>Closed</b> <br />
-        • Poster format: vertical A0 size <br />
-        • Please use the <b>'Submit Poster'</b> tab below to submit your poster.
-        <br />
-        • File size limit <b>10MB</b> <br />
-        • Only <b>PDF</b> format <br /><br />
-        Please submit the poster using the format
-        <b>"Name_Surname.pdf"</b>. Don’t miss this opportunity to share
-        your research at our workshop and engage in discussions with experts in
-        the field!
-        <br /><br />
-        🏆 The <b>two best posters</b> will receive a prize of <b>$100</b> each!
-        <br /><br />
-      </p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJPiRB89ZIpEpFhzFODJp0ifiEZEbt2T6y5ku91BlzyIN0Vg/viewform?usp=publish-editor" class="btn">Submit Poster</a>
-    </section>
+.schedule-table {
+  width: 110%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
 
-    <section id="venue" class="section light">
-      <h2>Venue</h2>
+.schedule-table thead {
+  background: linear-gradient(90deg, #0073e6, #00a2ff);
+  color: white;
+}
 
-      <div class="venue-container">
-        <div class="venue-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d102527.63724450386!2d136.650179!3d36.578491!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8336a72400001%3A0x98f42aaa36342079!2sHotel%20Kanazawa!5e0!3m2!1sen!2sjp!4v1770117170482!5m2!1sen!2sjp"
-            width="600"
-            height="450"
-            style="border: 0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
-        </div>
+.schedule-table th,
+.schedule-table td {
+  padding: 20px;
+  text-align: left;
+}
 
-        <div class="venue-text">
-          <p>
-            The workshop will take place from <b>9:00 AM – 12:30 PM</b> (with a
-            coffee break) at <b>Hotel Kanazawa</b>.
-          </p>
-          <p>
-            <strong>Address:</strong> 1-1 Horikawashinmachi, Kanazawa,
-            Ishikawa 920-0849 Japan.
-          </p>
-        </div>
-      </div>
-    </section>
+.schedule-table tbody tr {
+  border-bottom: 1px solid #eee;
+}
 
-    <section id="sponsors" class="section">
-      <h2>Sponsors</h2>
-      <div class="sponsors">
-        <div class="sponsor">
-          <img src="images/Advanced_Logo.png" alt="Sponsor 1" />
-        </div>
+.schedule-table tbody tr:hover {
+  background: #f2f8ff;
+}
 
-        <div class="sponsor">
-          <img src="images/PALPABLE.png" alt="Sponsor 2">
-        </div>
-      </div>
-    </section>
+/* =============================
+   Buttons
+============================= */
 
-     <section id="contact" class="section">
-      <h2>Contact Us</h2>
-      <p>
-        For inquiries, please contact <b>Saitarun Nadipineni</b> via
-        <a href="s.nadipineni@qmul.ac.uk"
-          >s.nadipineni@qmul.ac.uk.</a
-        >
-      </p>
-    </section>
+.btn {
+  background: linear-gradient(90deg, #0073e6, #00a2ff);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  display: inline-block;
+}
 
-    <footer>
-      <p>
-        <b>
-          Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions
-        </b>
-      </p>
-    </footer>
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,115,230,0.3);
+}
 
-    <footer>
-      <p>
-        RoboSoft 2026 • Half-Day Workshop • 7th April 2026 • Kanazawa • Japan
-      </p>
-    </footer>
-  </body>
-</html>
+/* =============================
+   Venue
+============================= */
 
+.venue-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
 
+.venue-map iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
 
+.venue-text {
+  font-size: 1.1rem;
+}
 
+.venue-text a {
+  color: #0073e6;
+}
 
+/* =============================
+   Sponsors
+============================= */
 
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
 
+.sponsor {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
 
+.sponsor:hover {
+  transform: translateY(-5px);
+}
 
+.sponsor img {
+  max-width: 180px;
+  max-height: 120px;
+  object-fit: contain;
+}
 
+/* =============================
+   Footer (No White Gap)
+============================= */
 
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 20px 10px 20px;
+  margin: 0;
+}
 
+footer + footer {
+  padding-top: 0;
+  margin-top: -5px;
+}
 
+/* =============================
+   Responsive
+============================= */
 
+@media (max-width: 768px) {
+  header.hero h1 {
+    font-size: 2rem;
+  }
 
+  .venue-container {
+    grid-template-columns: 1fr;
+  }
 
-
-
-
-
-
-
-
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
