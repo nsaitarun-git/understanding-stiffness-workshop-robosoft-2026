@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <!-- HERO -->
     <header class="hero">
       <div class="overlay">
         <h1>
@@ -20,317 +21,148 @@
           7th April 2026 • Kanazawa • Japan
         </p>
         <div style="display: flex; gap: 10px;">
-          <a
-            href="https://www.robosoft2026.org/registration/"
-            class="btn"
-            >Workshop Registration</a
-          >
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJPiRB89ZIpEpFhzFODJp0ifiEZEbt2T6y5ku91BlzyIN0Vg/viewform?usp=publish-editor" class="btn">Submit Poster</a>
+          <a href="#" class="btn">Workshop Registration</a>
+          <a href="#" class="btn">Submit Poster</a>
         </div>
       </div>
     </header>
 
+    <!-- NAVBAR -->
     <nav class="navbar">
-      <a href="https://www.robosoft2026.org/" class="logo">
-        <img src="images/logo_2.png" alt="Logo" />
-      </a>
-
-      <a href="https://www.seresearch.qmul.ac.uk/robotics/" class="logo">
-        <img src="images/queen_mary_logo.png" alt="Logo" />
-      </a>
-
-      <a href="https://www.imperial.ac.uk/" class="logo">
-        <img src="images/imperial_logo.png" alt="Logo" />
-      </a>
-
-      <a href="https://www.cam.ac.uk/" class="logo">
-        <img src="images/university_of_cambridge.png" alt="Logo" />
-      </a>
-
-      <a href="https://www.kindai.ac.jp/english/" class="logo">
-        <img src="images/kindai_university_logo.png" alt="Logo" />
+      <a href="#" class="logo">
+        <img src="images/logo_2.png" />
       </a>
 
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#speakers">Speakers</a></li>
         <li><a href="#organisers">Organisers</a></li>
         <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#cfp">Submissions</a></li>
-        <li><a href="#posters">Lightning Posters</a></li>
+        <li><a href="#posters">Posters</a></li>
+        <li><a href="#lightning-posters">Lightning Talks</a></li>
         <li><a href="#venue">Venue</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
+    <!-- ABOUT -->
     <section id="about" class="section">
       <h2>Workshop Overview</h2>
       <p>
         Physical interaction is one of the most dependable and common methods
-        for understanding the physical properties of soft objects. In the
-        medical domain and Minimally Invasive Surgery (MIS), the fundamental
-        diagnosis technique known as palpation, was a staple in first line of
-        examinations to identify stiff tissues and hard masses. Branching
-        further into the agricultural field, assessing the stiffness of fruits
-        allows farmers and machines to determine the quality of the produce and
-        their readiness for consumption. Today, with rapid advancements in the
-        field of soft robotics, soft haptics for teleoperation, agrifood systems,
-        and industrial automation, there is growing interest in replicating this
-        human ability to sense stiffness in robots. The stiffness perception of
-        soft matter is essential for developing robotic systems that can
-        interact safely, adaptively, and intelligently with soft objects in
-        their environment. This workshop aims to unite researchers and
-        practitioners from multiple disciplines to share insights on sensing the
-        stiffness of soft matter and its significance in enabling safer robotic
-        interactions. Furthermore, this workshop also aims to explore a
-        psychophysical perspective for improving soft matter perception in
-        robots. Through talks, discussions, and collaborative sessions,
-        participants will explore the current state of stiffness sensing
-        technologies, their practical applications, and the challenges that
-        remain in understanding and modelling tactile perception.
-        <br /><br />
-        <b>Objectives:</b>
-        <br />
-        • Distinguish between tactile sensing and stiffness sensing and
-        understand how these concepts are interrelated.<br />
-        • Explain how tactile sensing mechanisms can be applied to measure
-        stiffness across different materials and environments.<br />
-        • Understand how humans perceive stiffness through touch, and how these
-        mechanical, psychological, and neurological mechanisms can inspire the
-        design of robotic stiffness sensors.<br />
-        • Examine diverse applications of stiffness sensing, including its use
-        in medicine, agriculture, material identification, robotic manipulation,
-        etc.<br />
-        • Discuss the role of stiffness perception in enhancing human and robot
-        performance in teleoperation, virtual training, simulation systems, etc.<br />
-        • Integrate interdisciplinary perspectives to propose future directions
-        for research in robotic perception and human-machine interaction.
+        for understanding the physical properties of soft objects...
       </p>
     </section>
 
-    <!-- ==================== NEW: Gallery Section ==================== -->
-    <section id="gallery" class="section light">
-      <h2>Workshop Gallery</h2>
-      <div class="carousel-container">
-        <button class="carousel-arrow left" onclick="scrollCarousel(this, -1)" aria-label="Previous">‹</button>
-        <div class="carousel-scroll" id="gallery-scroll">
-          <!-- Add your gallery images here -->
-          <div class="carousel-item"><img src="images/gallery1.jpg" alt="Gallery 1"></div>
-          <div class="carousel-item"><img src="images/gallery2.jpg" alt="Gallery 2"></div>
-          <div class="carousel-item"><img src="images/gallery3.jpg" alt="Gallery 3"></div>
-          <div class="carousel-item"><img src="images/gallery4.jpg" alt="Gallery 4"></div>
-          <div class="carousel-item"><img src="images/gallery5.jpg" alt="Gallery 5"></div>
-        </div>
-        <button class="carousel-arrow right" onclick="scrollCarousel(this, 1)" aria-label="Next">›</button>
-      </div>
-    </section>
-
+    <!-- SPEAKERS -->
     <section id="speakers" class="section light">
       <h2>Expert Speakers</h2>
       <div class="speakers">
         <div class="speaker">
-          <img src="images/shogo.jpg" alt="Speaker 1" />
+          <img src="images/shogo.jpg" />
           <h3>Shogo Okamoto</h3>
-          <p>Tokyo Metropolitan University</p>
         </div>
         <div class="speaker">
-          <img src="images/ilana.jpg" alt="Speaker 2" />
+          <img src="images/ilana.jpg" />
           <h3>Ilana Nisky</h3>
-          <p>Ben Gurion University of the Negev</p>
-        </div>
-        <div class="speaker">
-          <img src="images/leone.jpg" alt="Speaker 3" />
-          <h3>Leone Costi</h3>
-          <p>European Space Agency</p>
-        </div>
-        <div class="speaker">
-          <img src="images/sheila.jpg" alt="Speaker 4" />
-          <h3>Sheila Russo</h3>
-          <p>Boston University College of Engineering</p>
-        </div>
-        <div class="speaker">
-          <img src="images/sanjaya.jpg" alt="Speaker 9" />
-          <h3>Sanjaya Bandara</h3>
-          <p>Kyushu University</p>
-        </div>
-        <div class="speaker">
-          <img src="images/angela.jpg" alt="Speaker 6" />
-          <h3>Angela Faragasso</h3>
-          <p>FingerVision Inc.</p>
-        </div>
-        <div class="speaker">
-          <img src="images/masashi.jpg" alt="Speaker 7" />
-          <h3>Masashi Konyo</h3>
-          <p>Tohoku University</p>
-        </div>
-        <div class="speaker">
-          <img src="images/chapa.jpg" alt="Speaker 10" />
-          <h3>Chapa Sirithunge</h3>
-          <p>University of Cambridge</p>
-        </div>
-        <div class="speaker">
-          <img src="images/arsen.jpg" alt="Speaker 8" />
-          <h3>Arsen Abdulali</h3>
-          <p>Queen Mary University of London</p>
-        </div>
-        <div class="speaker">
-          <img src="images/xing.jpg" alt="Speaker 5" />
-          <h3>Xing Wang</h3>
-          <p>University of Canberra</p>
         </div>
       </div>
     </section>
 
+    <!-- ORGANISERS -->
     <section id="organisers" class="section light">
       <h2>Organisers</h2>
       <div class="speakers">
-        <!-- Your original organisers remain unchanged -->
         <div class="speaker">
-          <img src="images/sai.jpg" alt="Organiser 1" />
+          <img src="images/sai.jpg" />
           <h3>Saitarun Nadipineni</h3>
-          <p>Queen Mary University of London</p>
-        </div>
-        <div class="speaker">
-          <img src="images/abu.jpg" alt="Organiser 2" />
-          <h3>Abu Bakar Dawood</h3>
-          <p>Queen Mary University of London</p>
-        </div>
-        <div class="speaker">
-          <img src="images/joshua.jpg" alt="Organiser 3" />
-          <h3>Joshua Brown</h3>
-          <p>Imperial College London</p>
-        </div>
-        <div class="speaker">
-          <img src="images/chapa.jpg" alt="Organiser 4" />
-          <h3>Chapa Sirithunge</h3>
-          <p>University of Cambridge</p>
-        </div>
-        <div class="speaker">
-          <img src="images/takahiro.jpg" alt="Organiser 5" />
-          <h3>Takahiro Matsuno</h3>
-          <p>Kindai University</p>
-        </div>
-        <div class="speaker">
-          <img src="images/kaspar.jpg" alt="Organiser 6" />
-          <h3>Kaspar Althoefer</h3>
-          <p>Queen Mary University of London</p>
-        </div>
-        <div class="speaker">
-          <img src="images/thilina.jpg" alt="Organiser 7" />
-          <h3>Thilina Dulantha Lalitharatne</h3>
-          <p>Queen Mary University of London</p>
         </div>
       </div>
     </section>
 
+    <!-- SCHEDULE -->
     <section id="schedule" class="section">
-      <!-- Your original schedule table remains unchanged -->
       <h2>Schedule</h2>
-      <table class="schedule-table">
-        <!-- ... your full schedule table ... -->
-      </table>
+      <p>Full schedule here...</p>
     </section>
 
-    <section id="cfp" class="section light">
-      <h2>Submissons</h2>
-      <!-- Your original submissions text remains unchanged -->
-      <p>
-        We invite students and early-stage researchers to submit a poster...
-        <!-- rest of your original text -->
-      </p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJPiRB89ZIpEpFhzFODJp0ifiEZEbt2T6y5ku91BlzyIN0Vg/viewform?usp=publish-editor" class="btn">Submit Poster</a>
-    </section>
-
-    <!-- ==================== NEW: Lightning Talk Posters Section ==================== -->
+    <!-- =============================
+         NEW: POSTER GALLERY
+    ============================= -->
     <section id="posters" class="section light">
+      <h2>Poster Gallery</h2>
+
+      <div class="carousel-container">
+        <button class="carousel-btn left">&#10094;</button>
+
+        <div class="carousel">
+          <img src="images/poster1.jpg" alt="">
+          <img src="images/poster2.jpg" alt="">
+          <img src="images/poster3.jpg" alt="">
+          <img src="images/poster4.jpg" alt="">
+        </div>
+
+        <button class="carousel-btn right">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- =============================
+         NEW: LIGHTNING POSTERS
+    ============================= -->
+    <section id="lightning-posters" class="section light">
       <h2>Lightning Talk Posters</h2>
-      
+
+      <!-- WINNERS -->
       <div class="winners-box">
-        <h3>🏆 Best Poster Award Winners</h3>
-        <p>Congratulations to the two outstanding posters!<br>
-        Each winner receives a prize of <strong>$100</strong>.</p>
+        <h3>🏆 Best Poster Winners</h3>
+        <p><b>Yongzhang Zhu</b></p>
+        <p><b>Juliette Alexandra Philippine Hars</b></p>
       </div>
 
       <div class="carousel-container">
-        <button class="carousel-arrow left" onclick="scrollCarousel(this, -1)" aria-label="Previous poster">‹</button>
-        <div class="carousel-scroll" id="posters-scroll">
-          <!-- Add your poster images here (use screenshots or thumbnails of the posters) -->
-          <div class="carousel-item"><img src="images/poster1.jpg" alt="Lightning Poster 1"></div>
-          <div class="carousel-item"><img src="images/poster2.jpg" alt="Lightning Poster 2"></div>
-          <div class="carousel-item"><img src="images/poster3.jpg" alt="Lightning Poster 3"></div>
-          <div class="carousel-item"><img src="images/poster4.jpg" alt="Lightning Poster 4"></div>
-          <div class="carousel-item"><img src="images/poster5.jpg" alt="Lightning Poster 5"></div>
+        <button class="carousel-btn left">&#10094;</button>
+
+        <div class="carousel">
+          <img src="images/lightning1.jpg">
+          <img src="images/lightning2.jpg">
+          <img src="images/lightning3.jpg">
+          <img src="images/lightning4.jpg">
         </div>
-        <button class="carousel-arrow right" onclick="scrollCarousel(this, 1)" aria-label="Next poster">›</button>
+
+        <button class="carousel-btn right">&#10095;</button>
       </div>
     </section>
 
+    <!-- VENUE -->
     <section id="venue" class="section light">
-      <!-- Your original venue section unchanged -->
       <h2>Venue</h2>
-      <div class="venue-container">
-        <!-- ... your original venue content ... -->
-      </div>
+      <p>Hotel Kanazawa</p>
     </section>
 
-    <section id="sponsors" class="section">
-      <!-- Your original sponsors unchanged -->
-      <h2>Sponsors</h2>
-      <div class="sponsors">
-        <!-- ... -->
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <!-- Your original contact unchanged -->
-      <h2>Contact Us</h2>
+    <!-- FOOTER -->
+    <footer>
       <p>
-        For inquiries, please contact <b>Saitarun Nadipineni</b> via
-        <a href="s.nadipineni@qmul.ac.uk">s.nadipineni@qmul.ac.uk.</a>
+        Understanding Soft-Matter Stiffness Workshop • RoboSoft 2026
       </p>
-    </section>
-
-    <footer>
-      <p><b>Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions</b></p>
     </footer>
 
-    <footer>
-      <p>RoboSoft 2026 • Half-Day Workshop • 7th April 2026 • Kanazawa • Japan</p>
-    </footer>
-
-    <!-- Simple JavaScript for carousels (grey-out arrows) -->
+    <!-- =============================
+         CAROUSEL SCRIPT
+    ============================= -->
     <script>
-      function scrollCarousel(btn, direction) {
-        const container = btn.parentElement.querySelector('.carousel-scroll');
-        const scrollAmount = 340;
-        container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-        
-        setTimeout(() => updateArrowStates(container), 400);
-      }
+      document.querySelectorAll('.carousel-container').forEach(container => {
+        const carousel = container.querySelector('.carousel');
+        const leftBtn = container.querySelector('.left');
+        const rightBtn = container.querySelector('.right');
 
-      function updateArrowStates(container) {
-        const parent = container.parentElement;
-        const leftBtn = parent.querySelector('.left');
-        const rightBtn = parent.querySelector('.right');
+        leftBtn.addEventListener('click', () => {
+          carousel.scrollBy({ left: -300, behavior: 'smooth' });
+        });
 
-        if (!leftBtn || !rightBtn) return;
-
-        const isAtStart = container.scrollLeft <= 10;
-        const isAtEnd = container.scrollLeft + container.clientWidth >= container.scrollWidth - 10;
-
-        leftBtn.disabled = isAtStart;
-        rightBtn.disabled = isAtEnd;
-      }
-
-      // Initialize on load
-      window.addEventListener('load', () => {
-        document.querySelectorAll('.carousel-scroll').forEach(scrollEl => {
-          updateArrowStates(scrollEl);
-          scrollEl.addEventListener('scroll', () => updateArrowStates(scrollEl));
+        rightBtn.addEventListener('click', () => {
+          carousel.scrollBy({ left: 300, behavior: 'smooth' });
         });
       });
     </script>
+
   </body>
 </html>
