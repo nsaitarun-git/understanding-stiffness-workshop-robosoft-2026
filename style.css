@@ -26,10 +26,7 @@ h2 {
   text-align: center;
 }
 
-/* =============================
-   Hero Section (Extended Width)
-============================= */
-
+/* Hero, Navbar, Sections, Speakers, Schedule, Buttons, Venue, Sponsors, Footer */
 header.hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
               url('images/banner.jpg') center/cover no-repeat;
@@ -62,10 +59,6 @@ header.hero p {
   margin-bottom: 30px;
 }
 
-/* =============================
-   Hero Buttons (Centered via CSS only)
-============================= */
-
 header.hero .overlay div {
   display: flex !important;
   justify-content: center !important;
@@ -74,10 +67,6 @@ header.hero .overlay div {
   flex-wrap: wrap;
   margin-top: 25px;
 }
-
-/* =============================
-   Navbar (Reduced Gap)
-============================= */
 
 .navbar {
   background: rgba(255,255,255,0.95);
@@ -114,10 +103,6 @@ header.hero .overlay div {
   color: #0073e6;
 }
 
-/* =============================
-   Sections
-============================= */
-
 .section {
   padding: 90px 20px;
   max-width: 1100px;
@@ -130,10 +115,6 @@ header.hero .overlay div {
   margin-top: 60px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.05);
 }
-
-/* =============================
-   Speaker Cards
-============================= */
 
 .speakers {
   display: grid;
@@ -172,10 +153,6 @@ header.hero .overlay div {
   font-size: 0.95rem;
 }
 
-/* =============================
-   Schedule Table
-============================= */
-
 .schedule-table {
   width: 110%;
   border-collapse: collapse;
@@ -204,10 +181,6 @@ header.hero .overlay div {
   background: #f2f8ff;
 }
 
-/* =============================
-   Buttons
-============================= */
-
 .btn {
   background: linear-gradient(90deg, #0073e6, #00a2ff);
   color: white;
@@ -223,10 +196,6 @@ header.hero .overlay div {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0,115,230,0.3);
 }
-
-/* =============================
-   Venue
-============================= */
 
 .venue-container {
   display: grid;
@@ -250,10 +219,6 @@ header.hero .overlay div {
 .venue-text a {
   color: #0073e6;
 }
-
-/* =============================
-   Sponsors
-============================= */
 
 .sponsors {
   display: flex;
@@ -280,10 +245,6 @@ header.hero .overlay div {
   object-fit: contain;
 }
 
-/* =============================
-   Footer (No White Gap)
-============================= */
-
 footer {
   background: #111;
   color: white;
@@ -298,7 +259,7 @@ footer + footer {
 }
 
 /* =============================
-   NEW: Carousel Styles (Gallery & Lightning Posters)
+   Carousel Styles (Gallery & Lightning Posters)
 ============================= */
 
 .carousel-container {
@@ -378,7 +339,6 @@ footer + footer {
 .carousel-arrow.left { left: 15px; }
 .carousel-arrow.right { right: 15px; }
 
-/* Winners Highlight Box */
 .winners-box {
   background: linear-gradient(135deg, #ffd700, #ffed4e);
   color: #1a1a1a;
@@ -395,10 +355,7 @@ footer + footer {
   margin-bottom: 12px;
 }
 
-/* =============================
-   Responsive
-============================= */
-
+/* Responsive */
 @media (max-width: 768px) {
   header.hero h1 {
     font-size: 2rem;
