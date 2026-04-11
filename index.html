@@ -3,14 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions</title>
+    <title>
+      Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions
+    </title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header class="hero">
       <div class="overlay">
-        <h1>Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions</h1>
-        <p>9th IEEE-RAS International Conference on Soft Robotics (RoboSoft) • 7th April 2026 • Kanazawa • Japan</p>
+        <h1>
+          Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions
+        </h1>
+        <p>
+          9th IEEE-RAS International Conference on Soft Robotics (RoboSoft) •
+          7th April 2026 • Kanazawa • Japan
+        </p>
         <div style="display: flex; gap: 10px;">
           <a href="https://www.robosoft2026.org/registration/" class="btn">Workshop Registration</a>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJPiRB89ZIpEpFhzFODJp0ifiEZEbt2T6y5ku91BlzyIN0Vg/viewform?usp=publish-editor" class="btn">Submit Poster</a>
@@ -19,7 +27,6 @@
     </header>
 
     <nav class="navbar">
-      <!-- Your logos and nav links (unchanged) -->
       <a href="https://www.robosoft2026.org/" class="logo"><img src="images/logo_2.png" alt="Logo" /></a>
       <a href="https://www.seresearch.qmul.ac.uk/robotics/" class="logo"><img src="images/queen_mary_logo.png" alt="Logo" /></a>
       <a href="https://www.imperial.ac.uk/" class="logo"><img src="images/imperial_logo.png" alt="Logo" /></a>
@@ -40,23 +47,70 @@
       </ul>
     </nav>
 
-    <!-- Workshop Gallery - Full coverage + auto-optimized height -->
-    <section id="gallery" class="section light full-gallery">
+    <!-- Workshop Gallery - First section with full-width tiles + auto scroll -->
+    <section id="gallery" class="section light">
       <h2>Workshop Gallery</h2>
       <div class="carousel-container">
-        <button class="carousel-arrow left" onclick="manualScroll(this, -1)">‹</button>
+        <button class="carousel-arrow left" onclick="scrollCarousel(this, -1)">‹</button>
         <div class="carousel-scroll" id="gallery-scroll">
-          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery1.jpg" alt="Gallery 1"></div>
-          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery2.jpg" alt="Gallery 2"></div>
-          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery3.jpg" alt="Gallery 3"></div>
-          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery4.jpg" alt="Gallery 4"></div>
-          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery5.jpg" alt="Gallery 5"></div>
+          <!-- Replace with your actual images -->
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery1.jpg" alt="Gallery Image 1"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery2.jpg" alt="Gallery Image 2"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery3.jpg" alt="Gallery Image 3"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery4.jpg" alt="Gallery Image 4"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery5.jpg" alt="Gallery Image 5"></div>
         </div>
-        <button class="carousel-arrow right" onclick="manualScroll(this, 1)">›</button>
+        <button class="carousel-arrow right" onclick="scrollCarousel(this, 1)">›</button>
       </div>
     </section>
 
-    <!-- About section and all other sections (speakers, organisers, posters, schedule, cfp, venue, sponsors, contact, footers) remain exactly as in your original code or previous versions -->
+    <section id="about" class="section">
+      <h2>Workshop Overview</h2>
+      <p>
+        Physical interaction is one of the most dependable and common methods
+        for understanding the physical properties of soft objects. ... (your full original text here)
+      </p>
+    </section>
+
+    <!-- Speakers, Organisers, Lightning Posters, Schedule, etc. remain the same as before -->
+    <!-- (For brevity, I'm showing only the changed parts. Keep all other sections exactly as in the previous version) -->
+
+    <section id="speakers" class="section light">
+      <h2>Expert Speakers</h2>
+      <div class="speakers">
+        <!-- Your speakers cards here (unchanged) -->
+      </div>
+    </section>
+
+    <section id="organisers" class="section light">
+      <h2>Organisers</h2>
+      <div class="speakers">
+        <!-- Your organisers cards here (unchanged) -->
+      </div>
+    </section>
+
+    <section id="posters" class="section light">
+      <h2>Lightning Talk Posters</h2>
+      <div class="winners-box">
+        <h3>🏆 Best Poster Award Winners</h3>
+        <p>Congratulations to the two outstanding posters!<br>Each winner receives a prize of <strong>$100</strong>.</p>
+      </div>
+
+      <div class="carousel-container">
+        <button class="carousel-arrow left" onclick="scrollCarousel(this, -1)">‹</button>
+        <div class="carousel-scroll" id="posters-scroll">
+          <!-- Replace with your actual poster images -->
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/poster1.jpg" alt="Lightning Poster 1"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/poster2.jpg" alt="Lightning Poster 2"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/poster3.jpg" alt="Lightning Poster 3"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/poster4.jpg" alt="Lightning Poster 4"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/poster5.jpg" alt="Lightning Poster 5"></div>
+        </div>
+        <button class="carousel-arrow right" onclick="scrollCarousel(this, 1)">›</button>
+      </div>
+    </section>
+
+    <!-- Rest of sections: schedule, cfp, venue, sponsors, contact, footers (copy from previous response) -->
 
     <!-- Lightbox Modal -->
     <div id="imageModal" class="modal">
@@ -65,80 +119,95 @@
     </div>
 
     <script>
-      let autoScrollInterval = null;
-      const AUTO_DELAY = 5000;
+      let autoScrollInterval;
+      const autoScrollDelay = 5000; // 5 seconds
 
       function startAutoScroll(containerId) {
         const container = document.getElementById(containerId);
         if (!container) return;
+
         clearInterval(autoScrollInterval);
 
         autoScrollInterval = setInterval(() => {
-          const scrollWidth = container.scrollWidth;
-          const clientWidth = container.clientWidth;
-          let nextLeft = container.scrollLeft + clientWidth;
+          const maxScroll = container.scrollWidth - container.clientWidth;
+          const nextScroll = container.scrollLeft + container.clientWidth;
 
-          if (nextLeft >= scrollWidth - 10) {
-            container.scrollTo({ left: 0, behavior: 'smooth' });
+          if (nextScroll >= maxScroll - 10) {
+            container.scrollTo({ left: 0, behavior: 'smooth' }); // loop back to start
           } else {
-            container.scrollTo({ left: nextLeft, behavior: 'smooth' });
+            container.scrollBy({ left: container.clientWidth, behavior: 'smooth' });
           }
-        }, AUTO_DELAY);
+        }, autoScrollDelay);
       }
 
-      function manualScroll(btn, direction) {
+      function scrollCarousel(btn, direction) {
         const container = btn.parentElement.querySelector('.carousel-scroll');
-        clearInterval(autoScrollInterval);
-        const step = container.clientWidth;
-        container.scrollBy({ left: direction * step, behavior: 'smooth' });
-        setTimeout(() => startAutoScroll(container.id), 6500);
+        clearInterval(autoScrollInterval); // pause auto when manual scroll
+        container.scrollBy({ left: direction * container.clientWidth, behavior: 'smooth' });
+        setTimeout(() => startAutoScroll(container.id), 6000); // resume after 6s
       }
 
-      function updateArrows(container) {
+      function updateArrowStates(container) {
         const parent = container.parentElement;
-        const left = parent.querySelector('.left');
-        const right = parent.querySelector('.right');
-        if (!left || !right) return;
+        const leftBtn = parent.querySelector('.left');
+        const rightBtn = parent.querySelector('.right');
+        if (!leftBtn || !rightBtn) return;
 
-        left.disabled = container.scrollLeft <= 10;
-        right.disabled = container.scrollLeft + container.clientWidth >= container.scrollWidth - 10;
+        const isAtStart = container.scrollLeft <= 10;
+        const isAtEnd = container.scrollLeft + container.clientWidth >= container.scrollWidth - 10;
+
+        leftBtn.disabled = isAtStart;
+        rightBtn.disabled = isAtEnd;
       }
 
-      function openImage(el) {
-        const src = el.querySelector('img').src;
-        document.getElementById('modalImage').src = src;
+      // Open image in modal
+      function openImage(element) {
+        const imgSrc = element.querySelector('img').src;
+        document.getElementById('modalImage').src = imgSrc;
         document.getElementById('imageModal').style.display = 'flex';
         document.body.style.overflow = 'hidden';
-        clearInterval(autoScrollInterval);
+        clearInterval(autoScrollInterval); // pause auto-scroll when modal is open
       }
 
       function closeModal() {
         document.getElementById('imageModal').style.display = 'none';
         document.body.style.overflow = 'visible';
+        // Resume auto-scroll after closing modal
         setTimeout(() => {
           startAutoScroll('gallery-scroll');
-          // startAutoScroll('posters-scroll'); // if you also want auto on posters
-        }, 600);
+          startAutoScroll('posters-scroll');
+        }, 500);
       }
 
-      // Keyboard ESC support
-      document.addEventListener('keydown', e => {
-        if (e.key === 'Escape') closeModal();
+      // Keyboard support
+      document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") closeModal();
       });
 
-      // Initialize on load
+      // Initialize everything
       window.addEventListener('load', () => {
-        const gallery = document.getElementById('gallery-scroll');
-        if (gallery) {
-          startAutoScroll('gallery-scroll');
-          updateArrows(gallery);
-          gallery.addEventListener('scroll', () => updateArrows(gallery));
-        }
+        const galleryContainer = document.getElementById('gallery-scroll');
+        const postersContainer = document.getElementById('posters-scroll');
 
-        // Pause on hover
-        document.querySelectorAll('.carousel-container').forEach(c => {
-          c.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
-          c.addEventListener('mouseleave', () => startAutoScroll('gallery-scroll'));
+        // Start auto-scroll for both carousels
+        startAutoScroll('gallery-scroll');
+        startAutoScroll('posters-scroll');
+
+        // Update arrows on scroll
+        [galleryContainer, postersContainer].forEach(container => {
+          if (container) {
+            updateArrowStates(container);
+            container.addEventListener('scroll', () => updateArrowStates(container));
+          }
+        });
+
+        // Pause auto-scroll on hover
+        document.querySelectorAll('.carousel-container').forEach(cont => {
+          cont.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
+          cont.addEventListener('mouseleave', () => {
+            startAutoScroll('gallery-scroll');
+            startAutoScroll('posters-scroll');
+          });
         });
       });
     </script>
