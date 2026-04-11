@@ -1,97 +1,146 @@
-/* Full-width tiles - each image covers the entire viewport width */
-.carousel-scroll {
-  display: flex;
-  gap: 0;                    /* no gap for full bleed */
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  padding: 0;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="overlay">
+        <h1>Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions</h1>
+        <p>9th IEEE-RAS International Conference on Soft Robotics (RoboSoft) • 7th April 2026 • Kanazawa • Japan</p>
+        <div style="display: flex; gap: 10px;">
+          <a href="https://www.robosoft2026.org/registration/" class="btn">Workshop Registration</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJPiRB89ZIpEpFhzFODJp0ifiEZEbt2T6y5ku91BlzyIN0Vg/viewform?usp=publish-editor" class="btn">Submit Poster</a>
+        </div>
+      </div>
+    </header>
 
-.carousel-scroll::-webkit-scrollbar {
-  display: none;
-}
+    <nav class="navbar">
+      <!-- Your logos and nav links (unchanged) -->
+      <a href="https://www.robosoft2026.org/" class="logo"><img src="images/logo_2.png" alt="Logo" /></a>
+      <a href="https://www.seresearch.qmul.ac.uk/robotics/" class="logo"><img src="images/queen_mary_logo.png" alt="Logo" /></a>
+      <a href="https://www.imperial.ac.uk/" class="logo"><img src="images/imperial_logo.png" alt="Logo" /></a>
+      <a href="https://www.cam.ac.uk/" class="logo"><img src="images/university_of_cambridge.png" alt="Logo" /></a>
+      <a href="https://www.kindai.ac.jp/english/" class="logo"><img src="images/kindai_university_logo.png" alt="Logo" /></a>
 
-.carousel-item {
-  flex: 0 0 100%;           /* each tile = full width */
-  scroll-snap-align: center;
-  overflow: hidden;
-  position: relative;
-}
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#organisers">Organisers</a></li>
+        <li><a href="#posters">Lightning Posters</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#cfp">Submissions</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-.carousel-item img {
-  width: 100%;
-  height: 520px;             /* tall enough for impact */
-  object-fit: cover;
-  display: block;
-}
+    <!-- Workshop Gallery - Full coverage + auto-optimized height -->
+    <section id="gallery" class="section light full-gallery">
+      <h2>Workshop Gallery</h2>
+      <div class="carousel-container">
+        <button class="carousel-arrow left" onclick="manualScroll(this, -1)">‹</button>
+        <div class="carousel-scroll" id="gallery-scroll">
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery1.jpg" alt="Gallery 1"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery2.jpg" alt="Gallery 2"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery3.jpg" alt="Gallery 3"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery4.jpg" alt="Gallery 4"></div>
+          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery5.jpg" alt="Gallery 5"></div>
+        </div>
+        <button class="carousel-arrow right" onclick="manualScroll(this, 1)">›</button>
+      </div>
+    </section>
 
-/* Keep arrows visible on full-width design */
-.carousel-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255,255,255,0.85);
-  color: #0073e6;
-  border: none;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-  z-index: 10;
-  transition: all 0.3s ease;
-}
+    <!-- About section and all other sections (speakers, organisers, posters, schedule, cfp, venue, sponsors, contact, footers) remain exactly as in your original code or previous versions -->
 
-.carousel-arrow:hover:not(:disabled) {
-  background: white;
-  transform: translateY(-50%) scale(1.08);
-}
+    <!-- Lightbox Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">×</span>
+      <img id="modalImage" src="" alt="Full size image">
+    </div>
 
-/* Lightbox Modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.92);
-  align-items: center;
-  justify-content: center;
-}
+    <script>
+      let autoScrollInterval = null;
+      const AUTO_DELAY = 5000;
 
-.modal img {
-  max-width: 92%;
-  max-height: 92vh;
-  border-radius: 12px;
-  box-shadow: 0 15px 50px rgba(0,0,0,0.7);
-}
+      function startAutoScroll(containerId) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        clearInterval(autoScrollInterval);
 
-.close {
-  position: absolute;
-  top: 25px;
-  right: 35px;
-  color: #fff;
-  font-size: 48px;
-  font-weight: bold;
-  cursor: pointer;
-}
+        autoScrollInterval = setInterval(() => {
+          const scrollWidth = container.scrollWidth;
+          const clientWidth = container.clientWidth;
+          let nextLeft = container.scrollLeft + clientWidth;
 
-.close:hover {
-  color: #0073e6;
-}
+          if (nextLeft >= scrollWidth - 10) {
+            container.scrollTo({ left: 0, behavior: 'smooth' });
+          } else {
+            container.scrollTo({ left: nextLeft, behavior: 'smooth' });
+          }
+        }, AUTO_DELAY);
+      }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .carousel-item img {
-    height: 380px;
-  }
-}
+      function manualScroll(btn, direction) {
+        const container = btn.parentElement.querySelector('.carousel-scroll');
+        clearInterval(autoScrollInterval);
+        const step = container.clientWidth;
+        container.scrollBy({ left: direction * step, behavior: 'smooth' });
+        setTimeout(() => startAutoScroll(container.id), 6500);
+      }
+
+      function updateArrows(container) {
+        const parent = container.parentElement;
+        const left = parent.querySelector('.left');
+        const right = parent.querySelector('.right');
+        if (!left || !right) return;
+
+        left.disabled = container.scrollLeft <= 10;
+        right.disabled = container.scrollLeft + container.clientWidth >= container.scrollWidth - 10;
+      }
+
+      function openImage(el) {
+        const src = el.querySelector('img').src;
+        document.getElementById('modalImage').src = src;
+        document.getElementById('imageModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        clearInterval(autoScrollInterval);
+      }
+
+      function closeModal() {
+        document.getElementById('imageModal').style.display = 'none';
+        document.body.style.overflow = 'visible';
+        setTimeout(() => {
+          startAutoScroll('gallery-scroll');
+          // startAutoScroll('posters-scroll'); // if you also want auto on posters
+        }, 600);
+      }
+
+      // Keyboard ESC support
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') closeModal();
+      });
+
+      // Initialize on load
+      window.addEventListener('load', () => {
+        const gallery = document.getElementById('gallery-scroll');
+        if (gallery) {
+          startAutoScroll('gallery-scroll');
+          updateArrows(gallery);
+          gallery.addEventListener('scroll', () => updateArrows(gallery));
+        }
+
+        // Pause on hover
+        document.querySelectorAll('.carousel-container').forEach(c => {
+          c.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
+          c.addEventListener('mouseleave', () => startAutoScroll('gallery-scroll'));
+        });
+      });
+    </script>
+  </body>
+</html>
