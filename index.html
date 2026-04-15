@@ -20,25 +20,46 @@
           7th April 2026 • Kanazawa • Japan
         </p>
         <div style="display: flex; gap: 10px;">
-          <a href="https://www.robosoft2026.org/registration/" class="btn">Workshop Registration</a>
+          <a
+            href="https://www.robosoft2026.org/registration/"
+            class="btn"
+            >Workshop Registration</a
+          >
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJPiRB89ZIpEpFhzFODJp0ifiEZEbt2T6y5ku91BlzyIN0Vg/viewform?usp=publish-editor" class="btn">Submit Poster</a>
         </div>
       </div>
     </header>
 
     <nav class="navbar">
-      <a href="https://www.robosoft2026.org/" class="logo"><img src="images/logo_2.png" alt="Logo" /></a>
-      <a href="https://www.seresearch.qmul.ac.uk/robotics/" class="logo"><img src="images/queen_mary_logo.png" alt="Logo" /></a>
-      <a href="https://www.imperial.ac.uk/" class="logo"><img src="images/imperial_logo.png" alt="Logo" /></a>
-      <a href="https://www.cam.ac.uk/" class="logo"><img src="images/university_of_cambridge.png" alt="Logo" /></a>
-      <a href="https://www.kindai.ac.jp/english/" class="logo"><img src="images/kindai_university_logo.png" alt="Logo" /></a>
+      <a href="https://www.robosoft2026.org/" class="logo">
+        <img src="images/logo_2.png" alt="Logo" />
+      </a>
+
+      <a href="https://www.seresearch.qmul.ac.uk/robotics/" class="logo">
+        <img src="images/queen_mary_logo.png" alt="Logo" />
+      </a>
+
+      <a href="https://www.imperial.ac.uk/" class="logo">
+        <img src="images/imperial_logo.png" alt="Logo" />
+      </a>
+
+      <a href="https://www.cam.ac.uk/" class="logo">
+        <img src="images/university_of_cambridge.png" alt="Logo" />
+      </a>
+
+      <a href="https://www.kindai.ac.jp/english/" class="logo">
+        <img src="images/kindai_university_logo.png" alt="Logo" />
+      </a>
+<!--
+      <a href="https://palpable-project.eu/" class="logo">
+        <img src="images/PALPABLE.png" alt="Logo" />
+      </a>
+      -->
 
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#speakers">Speakers</a></li>
         <li><a href="#organisers">Organisers</a></li>
-        <li><a href="#posters">Lightning Posters</a></li>
         <li><a href="#schedule">Schedule</a></li>
         <li><a href="#cfp">Submissions</a></li>
         <li><a href="#venue">Venue</a></li>
@@ -46,23 +67,6 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
-    <!-- Workshop Gallery - First section -->
-    <section id="gallery" class="section light">
-      <h2>Workshop Gallery</h2>
-      <div class="carousel-container">
-        <button class="carousel-arrow left" onclick="scrollCarousel(this, -1)">‹</button>
-        <div class="carousel-scroll" id="gallery-scroll">
-          <!-- Replace with your actual images -->
-          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery1.jpg" alt="Gallery Image 1"></div>
-          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery2.jpg" alt="Gallery Image 2"></div>
-          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery3.jpg" alt="Gallery Image 3"></div>
-          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery4.jpg" alt="Gallery Image 4"></div>
-          <div class="carousel-item" onclick="openImage(this)"><img src="images/gallery5.jpg" alt="Gallery Image 5"></div>
-        </div>
-        <button class="carousel-arrow right" onclick="scrollCarousel(this, 1)">›</button>
-      </div>
-    </section>
 
     <section id="about" class="section">
       <h2>Workshop Overview</h2>
@@ -93,71 +97,86 @@
         <b>Objectives:</b>
         <br />
         • Distinguish between tactile sensing and stiffness sensing and
-        understand how these concepts are interrelated.<br />
+        understand how these concepts are interrelated.
+        <br />
         • Explain how tactile sensing mechanisms can be applied to measure
-        stiffness across different materials and environments.<br />
+        stiffness across different materials and environments.
+        <br />
         • Understand how humans perceive stiffness through touch, and how these
         mechanical, psychological, and neurological mechanisms can inspire the
-        design of robotic stiffness sensors.<br />
+        design of robotic stiffness sensors.
+        <br />
         • Examine diverse applications of stiffness sensing, including its use
         in medicine, agriculture, material identification, robotic manipulation,
-        etc.<br />
+        etc.
+        <br />
         • Discuss the role of stiffness perception in enhancing human and robot
-        performance in teleoperation, virtual training, simulation systems, etc.<br />
+        performance in teleoperation, virtual training, simulation systems, etc.
+        <br />
         • Integrate interdisciplinary perspectives to propose future directions
         for research in robotic perception and human-machine interaction.
+        <br />
       </p>
     </section>
 
     <section id="speakers" class="section light">
       <h2>Expert Speakers</h2>
       <div class="speakers">
-        <!-- Your speakers remain unchanged -->
+
         <div class="speaker">
           <img src="images/shogo.jpg" alt="Speaker 1" />
           <h3>Shogo Okamoto</h3>
           <p>Tokyo Metropolitan University</p>
         </div>
+
         <div class="speaker">
           <img src="images/ilana.jpg" alt="Speaker 2" />
           <h3>Ilana Nisky</h3>
           <p>Ben Gurion University of the Negev</p>
         </div>
-        <div class="speaker">
+
+         <div class="speaker">
           <img src="images/leone.jpg" alt="Speaker 3" />
           <h3>Leone Costi</h3>
           <p>European Space Agency</p>
         </div>
+
         <div class="speaker">
           <img src="images/sheila.jpg" alt="Speaker 4" />
           <h3>Sheila Russo</h3>
           <p>Boston University College of Engineering</p>
         </div>
+
         <div class="speaker">
           <img src="images/sanjaya.jpg" alt="Speaker 9" />
           <h3>Sanjaya Bandara</h3>
           <p>Kyushu University</p>
         </div>
+        
         <div class="speaker">
           <img src="images/angela.jpg" alt="Speaker 6" />
           <h3>Angela Faragasso</h3>
           <p>FingerVision Inc.</p>
         </div>
+
         <div class="speaker">
           <img src="images/masashi.jpg" alt="Speaker 7" />
           <h3>Masashi Konyo</h3>
           <p>Tohoku University</p>
         </div>
+
         <div class="speaker">
           <img src="images/chapa.jpg" alt="Speaker 10" />
           <h3>Chapa Sirithunge</h3>
           <p>University of Cambridge</p>
         </div>
+
         <div class="speaker">
           <img src="images/arsen.jpg" alt="Speaker 8" />
           <h3>Arsen Abdulali</h3>
           <p>Queen Mary University of London</p>
         </div>
+
         <div class="speaker">
           <img src="images/xing.jpg" alt="Speaker 5" />
           <h3>Xing Wang</h3>
@@ -169,37 +188,42 @@
     <section id="organisers" class="section light">
       <h2>Organisers</h2>
       <div class="speakers">
-        <!-- Your organisers remain unchanged -->
         <div class="speaker">
           <img src="images/sai.jpg" alt="Organiser 1" />
           <h3>Saitarun Nadipineni</h3>
           <p>Queen Mary University of London</p>
         </div>
+
         <div class="speaker">
           <img src="images/abu.jpg" alt="Organiser 2" />
           <h3>Abu Bakar Dawood</h3>
           <p>Queen Mary University of London</p>
         </div>
+
         <div class="speaker">
           <img src="images/joshua.jpg" alt="Organiser 3" />
           <h3>Joshua Brown</h3>
           <p>Imperial College London</p>
         </div>
+
         <div class="speaker">
           <img src="images/chapa.jpg" alt="Organiser 4" />
           <h3>Chapa Sirithunge</h3>
           <p>University of Cambridge</p>
         </div>
+
         <div class="speaker">
           <img src="images/takahiro.jpg" alt="Organiser 5" />
           <h3>Takahiro Matsuno</h3>
           <p>Kindai University</p>
         </div>
+
         <div class="speaker">
           <img src="images/kaspar.jpg" alt="Organiser 6" />
           <h3>Kaspar Althoefer</h3>
           <p>Queen Mary University of London</p>
         </div>
+
         <div class="speaker">
           <img src="images/thilina.jpg" alt="Organiser 7" />
           <h3>Thilina Dulantha Lalitharatne</h3>
@@ -208,60 +232,202 @@
       </div>
     </section>
 
-    <!-- Lightning Talk Posters -->
-    <section id="posters" class="section light">
-      <h2>Lightning Talk Posters</h2>
-      
-      <div class="winners-box">
-        <h3>🏆 Best Poster Award Winners</h3>
-        <p>Congratulations to the two outstanding posters!<br>
-        Each winner receives a prize of <strong>$100</strong>.</p>
-      </div>
-
-      <div class="carousel-container">
-        <button class="carousel-arrow left" onclick="scrollCarousel(this, -1)">‹</button>
-        <div class="carousel-scroll" id="posters-scroll">
-          <!-- Replace with your actual poster images -->
-          <div class="carousel-item" onclick="openImage(this)"><img src="images/poster1.jpg" alt="Lightning Poster 1"></div>
-          <div class="carousel-item" onclick="openImage(this)"><img src="images/poster2.jpg" alt="Lightning Poster 2"></div>
-          <div class="carousel-item" onclick="openImage(this)"><img src="images/poster3.jpg" alt="Lightning Poster 3"></div>
-          <div class="carousel-item" onclick="openImage(this)"><img src="images/poster4.jpg" alt="Lightning Poster 4"></div>
-          <div class="carousel-item" onclick="openImage(this)"><img src="images/poster5.jpg" alt="Lightning Poster 5"></div>
-        </div>
-        <button class="carousel-arrow right" onclick="scrollCarousel(this, 1)">›</button>
-      </div>
-    </section>
-
-    <!-- Rest of your sections (schedule, cfp, venue, sponsors, contact, footer) remain unchanged -->
-    <!-- ... (same as previous version) ... -->
-
     <section id="schedule" class="section">
       <h2>Schedule</h2>
       <table class="schedule-table">
-        <!-- Your full schedule table here (unchanged) -->
-        <!-- Copy from your previous version if needed -->
-      </table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>09:00–09:10</b></td>
+      <td>
+        <b>Opening Remarks</b><br />
+        <small>Thilina Lalitharatne</small>
+      </td>
+    </tr>
+    <tr>
+      <td><b>09:10–10:10</b></td>
+      <td>
+        <b>Session 1: Expert Presentations</b><br />
+        <small>(10 min + 2 min Q&amp;A each)</small>
+      </td>
+    </tr>
+    <tr>
+      <td><b>09:10–09:22</b></td>
+      <td>Shogo Okamoto - "How Humans Perceive Softness Through Touch, Differently from the Mechanical Definition of Stiffness"
+</td>
+    </tr>
+    <tr>
+      <td><b>09:22–09:34</b></td>
+      <td>Arsen Abdulali - "Overcoming Tradeoffs in Modeling Soft Objects"</td>
+    </tr>
+    <tr>
+      <td><b>09:34–09:46</b></td>
+      <td>Sanjaya Bandara - "Optical Assessment of Tissue Properties: From Muscle Measurement to Mechanical Characterization"</td>
+    </tr>
+    <tr>
+      <td><b>09:46–09:58</b></td>
+      <td>Angela Faragasso - “Seeing Touch: Perceiving Material Properties Through Vision-Based Tactile Sensing”</td>
+    </tr>
+    <tr>
+      <td><b>09:58–10:10</b></td>
+      <td>Leone Costi - “Soft Physical Twins for Remote Palpation”</td>
+    </tr>
+    <tr>
+      <td><b>10:10–10:25</b></td>
+      <td>
+        <b>Lightning Talks</b><br />
+        <small>(5 speakers, 2 min each)</small>
+      </td>
+    </tr>
+    <tr>
+    <td><b>10:10–10:12</b></td>
+      <td>Juliette Hars - "HOOKED - Soft, Conformable, Crocheted Sensing Garment: Programmable Capacitive Arrays for Force Estimation"
+    </td>
+      </tr>
+    <tr>
+    <td><b>10:12–10:14</b></td>
+      <td>Benhui Dai - "Bio-inspired Soft Robotics & Electronics for Real-world Unstructured Scenarios"
+    </td>
+      </tr>
+    <tr>
+    <td><b>10:14–10:16</b></td>
+      <td>Christos Vasileios Lousis - "Bioinspired Passive Stiffening for Soft Actuator in MIS"
+    </td>
+      </tr>
+    <tr>
+    <td><b>10:16–10:18</b></td>
+      <td>Yongzhang Zhu - "Hybrid Positive-Negative Pressure Tunable Soft Tactile Sensor"
+    </td>
+      </tr>
+    <tr>
+    <td><b>10:18–10:20</b></td>
+      <td>Hashir Hamid - "Development of a Soft Stiffness-Controllable Vision-Based Force Sensing Probe"
+    </td>
+      </tr>
+    <tr>
+      <td><b>10:25–10:55</b></td>
+      <td>
+        <b>Coffee Break, Poster Presentations, and Voting</b>
+      </td>
+    </tr>
+    <tr>
+      <td><b>10:55–11:55</b></td>
+      <td>
+        <b>Session 2: Expert Presentations</b><br />
+        <small>(10 min + 2 min Q&amp;A each)</small>
+      </td>
+    </tr>
+    <tr>
+      <td><b>10:55–11:07</b></td>
+      <td>Masashi Konyo - "Rendering Softness via Contact Surface Stimulation by Linking Physical Simulation and a Tactile Display"</td>
+    </tr>
+    <tr>
+      <td><b>11:07–11:19</b></td>
+      <td>Xing Wang - "Automated grasping pipeline with grasping pose estimation and soft robotics in a harsh agricultural environment"</td>
+    </tr>
+    <tr>
+      <td><b>11:19–11:31</b></td>
+      <td>Chapa Sirithunge - "The Politics of softness: Who controls touch, force and perception?"</td>
+    </tr>
+    <tr>
+      <td><b>11:31–11:43</b></td>
+      <td>Ilana Nisky - "The Dynamics of Soft Touch: Perception and Action with Compliant Virtual Objects"</td>
+    </tr>
+    <tr>
+      <td><b>11:43–11:55</b></td>
+      <td>Sheila Russo - “Feeling Without Touch: Soft Optical Sensors for Perception in Compliant Environments”</td>
+    </tr>
+    <tr>
+      <td><b>11:55–12:20</b></td>
+      <td>
+        <b>Panel Discussion and Q&amp;A</b><br />
+        <small>(All Speakers)</small>
+      </td>
+    </tr>
+    <tr>
+      <td><b>12:20–12:30</b></td>
+      <td>
+        <b>Award Ceremony and Closing Remarks</b>
+      </td>
+    </tr>
+  </tbody>
+</table>
     </section>
 
     <section id="cfp" class="section light">
       <h2>Submissons</h2>
       <p>
         We invite students and early-stage researchers to submit a poster in
-        our areas of interest. ... (your original text)
+        our areas of interest. The selected posters will be invited for a
+        <b>5-minute lightning talk</b> during the workshop, offering an
+        opportunity to get in touch with leading experts in their field. The
+        areas of interest are (but not limited to):
+
+        <br /><br />
+        • Soft tactile sensors <br />
+        • Soft stiffness sensors <br />
+        • Tactile and stiffness sensing in Minimally Invasive Surgery (MIS) and
+        medical robots <br />
+        • Stiffness and tactile sensing in food handling and manipulations
+        <br />
+        • Psychophysics and human perception of softness/stiffness <br />
+        • Material models for soft matter <br />
+        • Contact mechanics, indentation, and probing strategies for soft
+        materials <br />
+        • Calibration and benchmarking for softness/stiffness sensing <br />
+        • Stiffness sensing in human-robot interactions
+
+        <br /><br />
+        <b>Submission Details</b>
+        <br />
+        • Submission Deadline: <b>Closed</b> <br />
+        • Poster format: vertical A0 size <br />
+        • Please use the <b>'Submit Poster'</b> tab below to submit your poster.
+        <br />
+        • File size limit <b>10MB</b> <br />
+        • Only <b>PDF</b> format <br /><br />
+        Please submit the poster using the format
+        <b>"Name_Surname.pdf"</b>. Don’t miss this opportunity to share
+        your research at our workshop and engage in discussions with experts in
+        the field!
+        <br /><br />
+        🏆 The <b>two best posters</b> will receive a prize of <b>$100</b> each!
+        <br /><br />
       </p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJPiRB89ZIpEpFhzFODJp0ifiEZEbt2T6y5ku91BlzyIN0Vg/viewform?usp=publish-editor" class="btn">Submit Poster</a>
     </section>
 
     <section id="venue" class="section light">
       <h2>Venue</h2>
+
       <div class="venue-container">
         <div class="venue-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d102527.63724450386!2d136.650179!3d36.578491!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8336a72400001%3A0x98f42aaa36342079!2sHotel%20Kanazawa!5e0!3m2!1sen!2sjp!4v1770117170482!5m2!1sen!2sjp" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d102527.63724450386!2d136.650179!3d36.578491!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8336a72400001%3A0x98f42aaa36342079!2sHotel%20Kanazawa!5e0!3m2!1sen!2sjp!4v1770117170482!5m2!1sen!2sjp"
+            width="600"
+            height="450"
+            style="border: 0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
         </div>
+
         <div class="venue-text">
-          <p>The workshop will take place from <b>9:00 AM – 12:30 PM</b> at <b>Hotel Kanazawa</b>.</p>
-          <p><strong>Address:</strong> 1-1 Horikawashinmachi, Kanazawa, Ishikawa 920-0849 Japan.</p>
+          <p>
+            The workshop will take place from <b>9:00 AM – 12:30 PM</b> (with a
+            coffee break) at <b>Hotel Kanazawa</b>.
+          </p>
+          <p>
+            <strong>Address:</strong> 1-1 Horikawashinmachi, Kanazawa,
+            Ishikawa 920-0849 Japan.
+          </p>
         </div>
       </div>
     </section>
@@ -269,80 +435,39 @@
     <section id="sponsors" class="section">
       <h2>Sponsors</h2>
       <div class="sponsors">
-        <div class="sponsor"><img src="images/Advanced_Logo.png" alt="Sponsor 1" /></div>
-        <div class="sponsor"><img src="images/PALPABLE.png" alt="Sponsor 2" /></div>
+        <div class="sponsor">
+          <img src="images/Advanced_Logo.png" alt="Sponsor 1" />
+        </div>
+
+        <div class="sponsor">
+          <img src="images/PALPABLE.png" alt="Sponsor 2">
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
+     <section id="contact" class="section">
       <h2>Contact Us</h2>
-      <p>For inquiries, please contact <b>Saitarun Nadipineni</b> via 
-        <a href="s.nadipineni@qmul.ac.uk">s.nadipineni@qmul.ac.uk</a>.
+      <p>
+        For inquiries, please contact <b>Saitarun Nadipineni</b> via
+        <a href="s.nadipineni@qmul.ac.uk"
+          >s.nadipineni@qmul.ac.uk.</a
+        >
       </p>
     </section>
 
     <footer>
-      <p><b>Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions</b></p>
+      <p>
+        <b>
+          Understanding Soft-Matter Stiffness: Key Challenges and Emerging Research Directions
+        </b>
+      </p>
     </footer>
+
     <footer>
-      <p>RoboSoft 2026 • Half-Day Workshop • 7th April 2026 • Kanazawa • Japan</p>
+      <p>
+        RoboSoft 2026 • Half-Day Workshop • 7th April 2026 • Kanazawa • Japan
+      </p>
     </footer>
-
-    <!-- Lightbox Popup -->
-    <div id="imageModal" class="modal">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <img id="modalImage" src="" alt="Full size image">
-    </div>
-
-    <script>
-      // Carousel scrolling with greyed arrows
-      function scrollCarousel(btn, direction) {
-        const container = btn.parentElement.querySelector('.carousel-scroll');
-        const scrollAmount = 460;
-        container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-        setTimeout(() => updateArrowStates(container), 400);
-      }
-
-      function updateArrowStates(container) {
-        const parent = container.parentElement;
-        const leftBtn = parent.querySelector('.left');
-        const rightBtn = parent.querySelector('.right');
-        if (!leftBtn || !rightBtn) return;
-
-        const isAtStart = container.scrollLeft <= 10;
-        const isAtEnd = container.scrollLeft + container.clientWidth >= container.scrollWidth - 10;
-
-        leftBtn.disabled = isAtStart;
-        rightBtn.disabled = isAtEnd;
-      }
-
-      // Open image in modal popup
-      function openImage(element) {
-        const imgSrc = element.querySelector('img').src;
-        document.getElementById('modalImage').src = imgSrc;
-        document.getElementById('imageModal').style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-      }
-
-      function closeModal() {
-        document.getElementById('imageModal').style.display = 'none';
-        document.body.style.overflow = 'visible';
-      }
-
-      // Close modal with ESC key
-      document.addEventListener('keydown', function(e) {
-        if (e.key === "Escape") {
-          closeModal();
-        }
-      });
-
-      // Initialize carousels
-      window.addEventListener('load', () => {
-        document.querySelectorAll('.carousel-scroll').forEach(scrollEl => {
-          updateArrowStates(scrollEl);
-          scrollEl.addEventListener('scroll', () => updateArrowStates(scrollEl));
-        });
-      });
-    </script>
   </body>
 </html>
+
