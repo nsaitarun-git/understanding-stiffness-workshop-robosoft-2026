@@ -78,3 +78,67 @@
     font-size: 2.2rem;
   }
 }
+
+/* =============================
+   Slideshow Styles
+============================= */
+
+.top-slideshow {
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fade animation */
+.fade {
+  animation: fadeEffect 1s ease-in-out;
+}
+
+@keyframes fadeEffect {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* Arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 12px;
+  color: #ccc;
+  font-size: 24px;
+  user-select: none;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+  color: white;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
