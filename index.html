@@ -10,7 +10,6 @@
   </head>
 
   <body>
-    <!-- Original Hero Section -->
     <header class="hero">
       <div class="overlay">
         <h1>
@@ -31,7 +30,6 @@
       </div>
     </header>
 
-    <!-- Original Navbar -->
     <nav class="navbar">
       <a href="https://www.robosoft2026.org/" class="logo">
         <img src="images/logo_2.png" alt="Logo" />
@@ -52,6 +50,11 @@
       <a href="https://www.kindai.ac.jp/english/" class="logo">
         <img src="images/kindai_university_logo.png" alt="Logo" />
       </a>
+<!--
+      <a href="https://palpable-project.eu/" class="logo">
+        <img src="images/PALPABLE.png" alt="Logo" />
+      </a>
+      -->
 
       <ul>
         <li><a href="#about">About</a></li>
@@ -65,20 +68,29 @@
       </ul>
     </nav>
 
-    <!-- NEW: Slideshow Section (Added as the first section after navbar) -->
-    <section class="slideshow-section">
+    <!-- Slideshow Section -->
+    <section class="top-slideshow">
       <div class="slideshow-container">
-        <div class="mySlides fade">
-          <img src="images/banner.jpg" alt="2023 Preview Collection" />
-          <div class="slideshow-text">
-            <h2>2023 preview collection</h2>
-            <a href="#" class="btn shop-btn">SHOP THE COLLECTION</a>
-          </div>
+
+        <div class="slide fade">
+          <img src="images/slide1.jpg" alt="Slide 1">
         </div>
+
+        <div class="slide fade">
+          <img src="images/slide2.jpg" alt="Slide 2">
+        </div>
+
+        <div class="slide fade">
+          <img src="images/slide3.jpg" alt="Slide 3">
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">❮</a>
+        <a class="next" onclick="changeSlide(1)">❯</a>
+
       </div>
     </section>
-
-    <!-- Original Workshop Overview Section -->
+    <!-- Slideshow Section -->
+    
     <section id="about" class="section">
       <h2>Workshop Overview</h2>
       <p>
@@ -108,71 +120,86 @@
         <b>Objectives:</b>
         <br />
         • Distinguish between tactile sensing and stiffness sensing and
-        understand how these concepts are interrelated.<br />
+        understand how these concepts are interrelated.
+        <br />
         • Explain how tactile sensing mechanisms can be applied to measure
-        stiffness across different materials and environments.<br />
+        stiffness across different materials and environments.
+        <br />
         • Understand how humans perceive stiffness through touch, and how these
         mechanical, psychological, and neurological mechanisms can inspire the
-        design of robotic stiffness sensors.<br />
+        design of robotic stiffness sensors.
+        <br />
         • Examine diverse applications of stiffness sensing, including its use
         in medicine, agriculture, material identification, robotic manipulation,
-        etc.<br />
+        etc.
+        <br />
         • Discuss the role of stiffness perception in enhancing human and robot
-        performance in teleoperation, virtual training, simulation systems, etc.<br />
+        performance in teleoperation, virtual training, simulation systems, etc.
+        <br />
         • Integrate interdisciplinary perspectives to propose future directions
         for research in robotic perception and human-machine interaction.
+        <br />
       </p>
     </section>
 
-    <!-- Original Speakers Section -->
     <section id="speakers" class="section light">
       <h2>Expert Speakers</h2>
       <div class="speakers">
+
         <div class="speaker">
           <img src="images/shogo.jpg" alt="Speaker 1" />
           <h3>Shogo Okamoto</h3>
           <p>Tokyo Metropolitan University</p>
         </div>
+
         <div class="speaker">
           <img src="images/ilana.jpg" alt="Speaker 2" />
           <h3>Ilana Nisky</h3>
           <p>Ben Gurion University of the Negev</p>
         </div>
-        <div class="speaker">
+
+         <div class="speaker">
           <img src="images/leone.jpg" alt="Speaker 3" />
           <h3>Leone Costi</h3>
           <p>European Space Agency</p>
         </div>
+
         <div class="speaker">
           <img src="images/sheila.jpg" alt="Speaker 4" />
           <h3>Sheila Russo</h3>
           <p>Boston University College of Engineering</p>
         </div>
+
         <div class="speaker">
           <img src="images/sanjaya.jpg" alt="Speaker 9" />
           <h3>Sanjaya Bandara</h3>
           <p>Kyushu University</p>
         </div>
+        
         <div class="speaker">
           <img src="images/angela.jpg" alt="Speaker 6" />
           <h3>Angela Faragasso</h3>
           <p>FingerVision Inc.</p>
         </div>
+
         <div class="speaker">
           <img src="images/masashi.jpg" alt="Speaker 7" />
           <h3>Masashi Konyo</h3>
           <p>Tohoku University</p>
         </div>
+
         <div class="speaker">
           <img src="images/chapa.jpg" alt="Speaker 10" />
           <h3>Chapa Sirithunge</h3>
           <p>University of Cambridge</p>
         </div>
+
         <div class="speaker">
           <img src="images/arsen.jpg" alt="Speaker 8" />
           <h3>Arsen Abdulali</h3>
           <p>Queen Mary University of London</p>
         </div>
+
         <div class="speaker">
           <img src="images/xing.jpg" alt="Speaker 5" />
           <h3>Xing Wang</h3>
@@ -181,7 +208,6 @@
       </div>
     </section>
 
-    <!-- Original Organisers Section -->
     <section id="organisers" class="section light">
       <h2>Organisers</h2>
       <div class="speakers">
@@ -190,31 +216,37 @@
           <h3>Saitarun Nadipineni</h3>
           <p>Queen Mary University of London</p>
         </div>
+
         <div class="speaker">
           <img src="images/abu.jpg" alt="Organiser 2" />
           <h3>Abu Bakar Dawood</h3>
           <p>Queen Mary University of London</p>
         </div>
+
         <div class="speaker">
           <img src="images/joshua.jpg" alt="Organiser 3" />
           <h3>Joshua Brown</h3>
           <p>Imperial College London</p>
         </div>
+
         <div class="speaker">
           <img src="images/chapa.jpg" alt="Organiser 4" />
           <h3>Chapa Sirithunge</h3>
           <p>University of Cambridge</p>
         </div>
+
         <div class="speaker">
           <img src="images/takahiro.jpg" alt="Organiser 5" />
           <h3>Takahiro Matsuno</h3>
           <p>Kindai University</p>
         </div>
+
         <div class="speaker">
           <img src="images/kaspar.jpg" alt="Organiser 6" />
           <h3>Kaspar Althoefer</h3>
           <p>Queen Mary University of London</p>
         </div>
+
         <div class="speaker">
           <img src="images/thilina.jpg" alt="Organiser 7" />
           <h3>Thilina Dulantha Lalitharatne</h3>
@@ -223,7 +255,6 @@
       </div>
     </section>
 
-    <!-- Original Schedule Section -->
     <section id="schedule" class="section">
       <h2>Schedule</h2>
       <table class="schedule-table">
@@ -250,7 +281,8 @@
     </tr>
     <tr>
       <td><b>09:10–09:22</b></td>
-      <td>Shogo Okamoto - "How Humans Perceive Softness Through Touch, Differently from the Mechanical Definition of Stiffness"</td>
+      <td>Shogo Okamoto - "How Humans Perceive Softness Through Touch, Differently from the Mechanical Definition of Stiffness"
+</td>
     </tr>
     <tr>
       <td><b>09:22–09:34</b></td>
@@ -277,24 +309,29 @@
     </tr>
     <tr>
     <td><b>10:10–10:12</b></td>
-      <td>Juliette Hars - "HOOKED - Soft, Conformable, Crocheted Sensing Garment: Programmable Capacitive Arrays for Force Estimation"</td>
-    </tr>
+      <td>Juliette Hars - "HOOKED - Soft, Conformable, Crocheted Sensing Garment: Programmable Capacitive Arrays for Force Estimation"
+    </td>
+      </tr>
     <tr>
     <td><b>10:12–10:14</b></td>
-      <td>Benhui Dai - "Bio-inspired Soft Robotics & Electronics for Real-world Unstructured Scenarios"</td>
-    </tr>
+      <td>Benhui Dai - "Bio-inspired Soft Robotics & Electronics for Real-world Unstructured Scenarios"
+    </td>
+      </tr>
     <tr>
     <td><b>10:14–10:16</b></td>
-      <td>Christos Vasileios Lousis - "Bioinspired Passive Stiffening for Soft Actuator in MIS"</td>
-    </tr>
+      <td>Christos Vasileios Lousis - "Bioinspired Passive Stiffening for Soft Actuator in MIS"
+    </td>
+      </tr>
     <tr>
     <td><b>10:16–10:18</b></td>
-      <td>Yongzhang Zhu - "Hybrid Positive-Negative Pressure Tunable Soft Tactile Sensor"</td>
-    </tr>
+      <td>Yongzhang Zhu - "Hybrid Positive-Negative Pressure Tunable Soft Tactile Sensor"
+    </td>
+      </tr>
     <tr>
     <td><b>10:18–10:20</b></td>
-      <td>Hashir Hamid - "Development of a Soft Stiffness-Controllable Vision-Based Force Sensing Probe"</td>
-    </tr>
+      <td>Hashir Hamid - "Development of a Soft Stiffness-Controllable Vision-Based Force Sensing Probe"
+    </td>
+      </tr>
     <tr>
       <td><b>10:25–10:55</b></td>
       <td>
@@ -345,9 +382,8 @@
 </table>
     </section>
 
-    <!-- Original Submissions Section -->
     <section id="cfp" class="section light">
-      <h2>Submissions</h2>
+      <h2>Submissons</h2>
       <p>
         We invite students and early-stage researchers to submit a poster in
         our areas of interest. The selected posters will be invited for a
@@ -389,7 +425,6 @@
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJPiRB89ZIpEpFhzFODJp0ifiEZEbt2T6y5ku91BlzyIN0Vg/viewform?usp=publish-editor" class="btn">Submit Poster</a>
     </section>
 
-    <!-- Original Venue Section -->
     <section id="venue" class="section light">
       <h2>Venue</h2>
 
@@ -420,7 +455,6 @@
       </div>
     </section>
 
-    <!-- Original Sponsors Section -->
     <section id="sponsors" class="section">
       <h2>Sponsors</h2>
       <div class="sponsors">
@@ -434,8 +468,7 @@
       </div>
     </section>
 
-    <!-- Original Contact Section -->
-    <section id="contact" class="section">
+     <section id="contact" class="section">
       <h2>Contact Us</h2>
       <p>
         For inquiries, please contact <b>Saitarun Nadipineni</b> via
@@ -445,7 +478,6 @@
       </p>
     </section>
 
-    <!-- Original Footers -->
     <footer>
       <p>
         <b>
@@ -459,21 +491,5 @@
         RoboSoft 2026 • Half-Day Workshop • 7th April 2026 • Kanazawa • Japan
       </p>
     </footer>
-
-    <!-- Slideshow Script -->
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-
-      function showSlides(n) {
-        let slides = document.getElementsByClassName("mySlides");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (let i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slides[slideIndex-1].style.display = "block";
-      }
-    </script>
   </body>
 </html>
